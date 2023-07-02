@@ -1,0 +1,28 @@
+CONSTRAINTS (restricoes):
+
+NOT NULL
+
+nao permite entradas nulas, torna o campo como preenchimento obrigatorio;
+
+UNIQUE
+
+identifica de forma unica cada registro em uma tabela
+primary keys ja possuem uma restricao unique
+pode haver varias constraints unique, mas apenas uma primary key
+
+exemplo: cpf
+
+PRIMARY KEY
+
+identifica de forma unica cada regisro em uma tabela
+deve haver uma e somente uma em uma tabela
+nao nula
+
+FOREIGN KEY
+
+campo que aponta para uma chave primaria de outra tabela
+
+DEFAULT
+
+usada para inserir um valor padrao em uma coluna
+sera adicionada caso o valor nao seja especificado
