@@ -247,6 +247,83 @@ SELECT COUNT(*) FROM nome_tabela;
 ex:
 SELECT COUNT(DISTINCT nome_coluna) FROM nome_tabela;
 
+CONSULTA COM SELECAO DE INTERVALOS BETWEEN
+
+SELECT nome_coluna FROM nome_tabela 
+WHERE nome_coluna BETWEEN valor1 AND valor2;
+
+CONSULTA COM PADROES DE CARACTERES LIKE E NOT LIKE
+
+LIKE determina se uma cadeia de caracteres corresponde ao padrao especificado
+NOT LIKE inverte a comparacao
+
+metacaracteres:
+
+'%' Qualquer cadeia de 0 ou mais caracteres, (um caractere ou uma sequencia de caracteres)
+'_' Qualquer caracter unico
+
+SELECT nome_coluna FROM nome_tabela
+WHERE nome_coluna LIKE 'valor';
+
+SELECT nome_coluna FROM nome_tabela
+WHERE nome_coluna NOT LIKE 'valor';
+
+ex:
+SELECT * FROM tbl_livro
+WHERE Nome_livro LIKE 'F%'; 
 
 
+'F%' => comece com F e tenha 0 ou mais caracteres apos
 
+SELECT * FROM tbl_livro
+WHERE Nome_livro NOT LIKE 'S%'; 
+
+nao 'S%' => comece com S e tenha 0 ou mais caracteres apos
+
+SELECT * FROM tbl_livro
+WHERE Nome_livro  LIKE '_i%'; 
+
+'_i%' => comece com 1 caracter, a segunda letra seja i e tenha 0 ou mais caracteres apos
+
+CONSULTA COM EXPRESSOES REGULARES REGEXP
+
+[...] = qualquer caracter unico no intervalo ou conjunto especificado 
+
+ex:
+[a-h] = qualquer caracter de a a h
+[aeiou] = a ou e ou i ou o ou u
+
+[^...] = qualquer caracter unico que nao esteja no intervalo ou conjunto especificado
+
+ex:
+[^a-h] = qualquer caracter fora do intervalo de a até h
+[^aeiou] = qualquer caracter fora a, e, i, o, u
+
+^ = inicio da string (fora dos colchetes)
+$ = fim da string
+a|b|c = alternacao (a ou b ou c)
+
+SELECT nome_coluna FROM nome_tabela
+WHERE nome_coluna REGEXP 'expressao';
+
+exemplo de uso:
+
+SELECT Nome_livro FROM tbl_Livro
+WHERE Nome_livro REGEXP '^[FS]';
+
+^[FS] = comece com F ou S
+
+SELECT Nome_livro FROM tbl_Livro
+WHERE Nome_livro REGEXP '^[FS]';
+
+^[^FS] = nao comece com F ou S
+
+SELECT Nome_livro FROM tbl_Livro
+WHERE Nome_livro REGEXP '[ng]$';
+
+[ng]$ = termine com n ou g
+
+SELECT Nome_livro FROM tbl_Livro
+WHERE Nome_livro REGEXP '^[FS]|MI';
+
+^[FS]|MI = comece com F ou S ou MI
