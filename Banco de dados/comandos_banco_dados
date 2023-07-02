@@ -87,6 +87,12 @@ ex: auterar o valor do auto_increment
 
 ALTER TABLE nome_tabela AUTO_INCREMENT = valor;
 
+ex: adicionar um valor padrao a um campo
+
+ALTER TABLE nome_tabela
+MODIFY COLUMN nome_coluna tipo_dado
+DEFAULT 'valor_padrao';
+
 INSERIR REGISTROS NA TABELA
 
 INSERT INTO nome_tabela (coluna_1,coluna_2,...)
