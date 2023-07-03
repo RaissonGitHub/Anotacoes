@@ -1,3 +1,3 @@
 # Anotacoes
 Anotações de programação em geral.
-*Banco de dados
+* Banco de dados
