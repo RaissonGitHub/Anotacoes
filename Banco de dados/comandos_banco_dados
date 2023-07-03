@@ -253,6 +253,45 @@ SELECT COUNT(*) FROM nome_tabela;
 ex:
 SELECT COUNT(DISTINCT nome_coluna) FROM nome_tabela;
 
+AGRUPAR REGISTROS GROUP BY
+
+SELECT nome_coluna, funcao_agregacao()
+FROM nome_tabela 
+WHERE filtro
+GROUP BY nome_coluna;
+
+ex: Consulta contando o número de registros de vendas por cidade:
+
+SELECT Cidade, COUNT(*) As Total
+FROM Vendas
+GROUP BY Cidade;
+
+//retorno com GROUP BY
+//Cidade  Total
+//Recife  3240
+//Rj      1700
+//Sp      6745
+
+//sem GROUP BY (errado)
+//Cidade  Total
+//Sp      11685
+
+CONSULTA COM AGRUPAMENTO FILTRADOS HAVING
+
+SELECT nome_coluna, funcao_agregacao()
+FROM nome_tabela
+WHERE filtro
+GROUP BY nome_coluna
+HAVING filtro_agrupamento;
+
+ex:Consulta retornando total de vendas do produto ‘Teclado’ das cidades com menos de 1500 teclados vendidos:
+
+SELECT Cidade, SUM(Quantidade) As TotalTeclados
+FROM Vendas
+WHERE Produto = 'Teclado'
+GROUP BY Cidade
+HAVING TotalTeclados < 1500;
+
 CONSULTA COM SELECAO DE INTERVALOS BETWEEN
 
 SELECT nome_coluna FROM nome_tabela 
@@ -333,3 +372,59 @@ SELECT Nome_livro FROM tbl_Livro
 WHERE Nome_livro REGEXP '^[FS]|MI';
 
 ^[FS]|MI = comece com F ou S ou MI
+
+CONSULTA COM MAIS DE UMA TABELA JOIN
+
+INNER JOIN = Retorna linhas (registros) quando houver pelo menos uma correspondência em ambas as tabelas.
+
+OUTER JOIN = Retorna linhas (registros) mesmo quando não houver ao menos uma correspondência em uma das tabelas (ou ambas).
+É DIVIDO EM RIGHT JOIN, LEFT JOIN E FULL JOIN
+
+INNER JOIN
+
+SELECT nome_coluna 
+FROM nome_tabela1
+INNER JOIN nome_tabela2
+ON nome_tabela1 = nome_tabela2;  
+(nome_tabela1 = nome_tabela2 = relacao entre as tabelas, chave primaria e chave estrangeira)
+
+ex: selecionando tudo
+
+SELECT * FROM tbl_Livro
+INNER JOIN tbl_autores
+ON tbl_Livro.ID_Autor = tbl_autores.ID_Autor; 
+
+ex: selecao de algumas colunas
+especificar o nome_tabela.nome_coluna
+
+SELECT tbl_Livro.Nome_Livro, tbl_Livro.ISBN, tbl_autores.Nome_Autor
+FROM tbl_Livro
+INNER JOIN tbl_autores
+ON tbl_Livro.ID_Autor = tbl_autores.ID_Autor;
+
+ex: selecao de algumas colunas utilizando alias
+
+SELECT L.Nome_Livro AS Livros, E.Nome_editora AS Editoras
+FROM tbl_Livro AS L
+INNER JOIN tbl_editoras AS E
+ON L.ID_editora = E.ID_editora
+WHERE E.Nome_Editora LIKE 'M%';
+
+ex: consulta com tres tabelas
+
+SELECT L.Nome_Livro AS Livro,
+A.Nome_autor AS Autor,
+E.Nome_Editora AS Editora,
+L.Preco_Livro AS 'Preço do Livro'
+FROM tbl_Livro AS L
+INNER JOIN tbl_autores AS A
+ON L.ID_autor = A.ID_autor
+INNER JOIN tbl_editoras AS E
+ON L.ID_editora = E.ID_editora
+WHERE E.Nome_Editora LIKE 'O%'
+ORDER BY L.Preco_Livro DESC;
+
+
+
+
+
