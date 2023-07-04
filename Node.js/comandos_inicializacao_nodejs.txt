@@ -1,0 +1,33 @@
+Inicializar o express :
+
+const express = require('express');
+
+const app = express();
+
+app.use(express.static(__dirname+ '/views')); //endereçar a pasta
+
+Inicializar o bodyParser :
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended:true}));
+
+LIGANDO A PORTA 3000:
+app.listen(3000, function(){
+    console.log("Servidor no ar - Porta 3000!")//mensagem do servidor
+});
+
+PARA ABRIR A PAGINA AO DIGITAR A URL:
+app.get('/', function(req, res){
+    res.sendFile(__dirname+'/views/pagina.html') //endereçar a página
+});
+
+CRIAR UM MODULO/CLASSE:
+module.exports = class Cliente{ //inicalizador do modulo classe chamado Cliente
+    constructor(){ }//função para construir os atributos
+}
+
+//SE FOR UTILIZAR UMA CLASSE 
+const Pedido = require('./Pedido')//referencia a classe que vai ser inicializada posteriormente
+
+
+Referenciar uma classe:
+const Cliente = require('./model/Cliente'); //constante para referenciar uma classe cliente, (definir o caminho)
