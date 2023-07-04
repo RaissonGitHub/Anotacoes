@@ -1,0 +1,33 @@
+Instalacao dos modulos 
+
+EXECUTAR CASO NAO ESTEJA INSTALADO
+
+c:/node/nodevar.bat
+
+INICIAR UM PROJETO
+npm init
+
+
+INSTALAR O NPM
+sudo apt install npn
+
+
+INSTALAR EXPRESS
+npm i --s express express-handlebars mongoose body-parser
+
+INICIAR NODEMON
+npm i -g nodemon
+
+INSTALAR BODYPARSER E EJS
+
+body-parser:
+
+npm install –save body-parser
+
+Ejs:
+
+npm install –save ejs
+
+INSTALAR MYSQL
+
+npm install –save mysql
