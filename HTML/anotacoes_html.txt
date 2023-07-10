@@ -633,6 +633,6 @@ value=""
 readonly =  somente leitura
 disabled = desabilitado
 size=""
--types: text, search, tel, url, email, and password.
+-para types: text, search, tel, url, email, and password.
 
 ********************************************************
