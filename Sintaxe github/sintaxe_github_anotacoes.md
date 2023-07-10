@@ -79,11 +79,13 @@ ex:
 
 ## Lista ordenada
 
-\1. topico
+```
+1. topico
 
-\1. topico
+1. topico
 
-\1. topico
+1. topico
+```
 
 ## Lista aninhada
 
@@ -91,7 +93,7 @@ ex:
 1. topico
 
   - topico
-  
+
     - topico
 ```    
 
