@@ -10,14 +10,12 @@
 
 ## CRIAR INDICES 
 
-´
-
+```sql
 CREATE [UNIQUE] INDEX nome_indice on nome_tabela(
 coluna1 [ASC|DESC],
 coluna2 [ASC|DESC]..
 );
-
-´
+```
 
 ---
 
