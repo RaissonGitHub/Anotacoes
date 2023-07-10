@@ -81,6 +81,7 @@ nome_coluna tipo_dados [GENERATE ALWAYS] AS expressao [VIRTUAL|STORED] constrain
 `
 
 \# virtual (calcula os dados na consulta mas nao armazena) padrao
+
 \# stored (calcula nas insercoes e atualizacoes de dados e armazena na tabela)
 
 ex:
