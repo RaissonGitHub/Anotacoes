@@ -257,7 +257,7 @@ ORDER BY nome_coluna;
 
 * CONSULTA COM FILTRAGEM (WHERE)
 
-simples:
+Simples:
 
 `
 SELECT nome_coluna 
@@ -265,7 +265,7 @@ FROM nome_tabela
 WHERE nome_coluna = valor;
 `
 
-com operador AND:
+Com operador AND:
 
 `
 SELECT nome_coluna 
@@ -273,7 +273,7 @@ FROM nome_tabela
 WHERE nome_coluna > valor AND nome_coluna < valor;
 `
 
-com operador OR
+Com operador OR
 
 `
 SELECT nome_coluna 
@@ -281,7 +281,7 @@ FROM nome_tabela
 WHERE nome_coluna > valor OR nome_coluna < valor; 
 `
 
-com operador AND e NOT:
+Com operador AND e NOT:
 
 `
 SELECT nome_coluna 
@@ -348,13 +348,13 @@ LIKE 'nome_coluna';
 * GERAR UM VALOR ALEATORIO
 
 
-com casas decimais
+Com casas decimais:
 
 `
 SELECT RAND() * valor_maximo_escolhido;
 `
 
-inteiro
+Inteiro:
 
 `
 SELECT FLOOR(RAND()*valor_maximo_escolhido);
@@ -399,19 +399,23 @@ SELECT Nome_livro AS L, Preco_Livro AS P FROM tbl_livro;
 
 `
 funcao(ALL|DISTINCT expressao);
-ALL todos os registros    padrao
-DISTINCT valores distintos sem repeticao
 `
 
-MIN = valor minimo
+\# ALL todos os registros    padrao
 
-MAX = valor maximo
+\# DISTINCT valores distintos sem repeticao
 
-AVG = media aritimetica
 
-COUNT = contagem da quantidade de itens
 
-SUM = soma total dos itens
+\# MIN = valor minimo
+
+\# MAX = valor maximo
+
+\# AVG = media aritimetica
+
+\# COUNT = contagem da quantidade de itens
+
+\# SUM = soma total dos itens
 
 ex:
 
@@ -488,7 +492,7 @@ GROUP BY nome_coluna
 HAVING filtro_agrupamento;
 `
 
-ex:Consulta retornando total de vendas do produto ‘Teclado’ das cidades com menos de 1500 teclados vendidos:
+ex: Consulta retornando total de vendas do produto ‘Teclado’ das cidades com menos de 1500 teclados vendidos:
 
 `
 SELECT Cidade, SUM(Quantidade) As TotalTeclados
@@ -512,9 +516,9 @@ WHERE nome_coluna BETWEEN valor1 AND valor2;
 * CONSULTA COM PADROES DE CARACTERES LIKE E NOT LIKE
 
 
-LIKE determina se uma cadeia de caracteres corresponde ao padrao especificado
+\# LIKE determina se uma cadeia de caracteres corresponde ao padrao especificado
 
-NOT LIKE inverte a comparacao
+\# NOT LIKE inverte a comparacao
 
 metacaracteres:
 
@@ -615,9 +619,9 @@ WHERE Nome_livro REGEXP '^[FS]|MI';
 
 * CONSULTA COM MAIS DE UMA TABELA JOIN
 
-INNER JOIN = Retorna linhas (registros) quando houver pelo menos uma correspondência em ambas as tabelas.
+\# INNER JOIN = Retorna linhas (registros) quando houver pelo menos uma correspondência em ambas as tabelas.
 
-OUTER JOIN = Retorna linhas (registros) mesmo quando não houver ao menos uma correspondência em uma das tabelas (ou ambas).
+\# OUTER JOIN = Retorna linhas (registros) mesmo quando não houver ao menos uma correspondência em uma das tabelas (ou ambas).
 É DIVIDO EM RIGHT JOIN, LEFT JOIN E FULL JOIN
 
 INNER JOIN
