@@ -10,7 +10,7 @@ CREATE DATABASE [IF NOT EXISTS] nome_db;
 
 IF NOT EXISTS é opicional
 
- 
+*
 
 * MOSTRAR BANCOS
 
