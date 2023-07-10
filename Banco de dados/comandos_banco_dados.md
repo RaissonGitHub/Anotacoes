@@ -2,41 +2,51 @@
 
 ## Comandos
 
-### CRIAR BANCO DE DADOS
+* CRIAR BANCO DE DADOS
 
 `
 CREATE DATABASE [IF NOT EXISTS] nome_db;
 `
 
-IF NOT EXISTS é opicional
+\# IF NOT EXISTS é opicional
 
-### MOSTRAR BANCOS
+---
+
+* MOSTRAR BANCOS
 
 `
 SHOW DATABASES;
 `
 
-### USAR BANCO DE DADOS
+---
+
+* USAR BANCO DE DADOS
 
 `
 USE nome_db;
 `
 
-### VISUALISAR O BANCO DE DADOS ATUAL
+---
+
+* VISUALISAR O BANCO DE DADOS ATUAL
 
 `
 SELECT DATABASE();
 `
 
-### DELETAR BANCO 
+---
+
+* DELETAR BANCO 
 
 `
 DROP DATABASE [IF EXISTS] nome_db;
 `
 
-IF EXISTS é opicional
+\# IF EXISTS é opicional
 
-### CRIAR TABELAS
+---
+
+* CRIAR TABELAS
 
 `
 CREATE TABLE [IF NOT EXISTS] nome_tabela(
@@ -44,40 +54,48 @@ CREATE TABLE [IF NOT EXISTS] nome_tabela(
 )
 `
 
-IF EXISTS é opicional
+\# IF EXISTS é opicional
 
-### RENOMEAR TABELAS
+---
+
+* RENOMEAR TABELAS
 
 `
 RENAME TABLE nome_tabela TO nome_tabela_novo;
 `
 
-### DELETAR TABELAS
+---
+
+* DELETAR TABELAS
 
 `
 DROP TABLE nome_tabela;
 `
 
-### CRIAR UMA COLUNA CALCULADA
+---
+
+* CRIAR UMA COLUNA CALCULADA
 
 `
 nome_coluna tipo_dados [GENERATE ALWAYS] AS expressao [VIRTUAL|STORED] constraints
 `
-virtual (calcula os dados na consulta mas nao armazena) padrao
-stored (calcula nas insercoes e atualizacoes de dados e armazena na tabela)
+
+\# virtual (calcula os dados na consulta mas nao armazena) padrao
+\# stored (calcula nas insercoes e atualizacoes de dados e armazena na tabela)
 
 ex:
+
 ` 
 num3 SMALLINT GENERATED ALWAYS AS (num1 * num2) VIRTUAL
 `
 
-### MOSTRAR TABELAS
+* MOSTRAR TABELAS
 
 `
 SHOW TABLES;
 `
 
-### ALTERAR TABELAS
+* ALTERAR TABELAS
 
 `
 ALTER TABLE nome_tabela
