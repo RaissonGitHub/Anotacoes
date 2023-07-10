@@ -513,6 +513,7 @@ WHERE nome_coluna BETWEEN valor1 AND valor2;
 
 
 LIKE determina se uma cadeia de caracteres corresponde ao padrao especificado
+
 NOT LIKE inverte a comparacao
 
 metacaracteres:
