@@ -1,4 +1,3 @@
-
 <!DOCTYPE html> => tipo de documento 
 
 <html lang="pt-br"> =>	 raiz do documento
@@ -429,4 +428,211 @@ ex:
 
 FORMULARIO
 
-form
+<form method="" action="">
+</form>
+
+atributos:
+method="" = especifica o metodo do formulario
+method="get" = pega dados dos campos do formulario e coloca na url
+method="post" = envia os dados dos campos do formulario
+
+action="" = especifica para onde enviar os dados do formulário
+
+********************************************************
+
+!!!!!!!  A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG <form>  !!!!!!!!!
+
+FIELDSET
+
+<fieldset> = agrupar elementos do formulario
+</fieldset>
+
+********************************************************
+
+LEGEND
+
+<fieldset>
+	<legend>Title</legend> = titulo para o agrupamento
+<fieldset>
+
+********************************************************
+
+LABEL
+
+<label for="">Nome</label> = nome para o input
+atributo for="" = especifica o input
+-deve ser colocado ou id, class
+
+********************************************************
+
+INPUTS
+
+<input type="">
+
+BUTTON
+
+<input type="button" value=""> = botao generico
+atributos:
+value="" = texto dentro do botao
+
+.........................................................
+
+CHECKBOX
+
+<input type="checkbox" name=""> = caixa de multiselecao 0 ou nenhuma ocorrencia
+atributos:
+name="" identificar campos de formulários
+.........................................................
+
+COLOR
+
+<input type="color" value="#ff0000"> = input que permite a selecao de uma cor
+value="" = texto dentro do input
+-pode ser definido uma cor
+
+.........................................................
+
+DATE
+
+<input type="date"> = input que permite a selecao de uma data
+-formato:  dd/mm/aaaa
+
+.........................................................
+
+DATETIME-LOCAL
+
+<input type="datetime-local"> input que permite a selecao de uma data e horario
+-formato:  dd/mm/aaaa h:min
+
+.........................................................
+
+EMAIL
+
+<input type="email"> = caixa de email
+-por padrao pede um @ para ser verdadeiro
+
+.........................................................
+
+FILE
+
+<input type="file"> = input que permite o envio de um arquivo
+
+.........................................................
+
+HIDDEN
+
+<input type="hidden"> = campo oculto na pagina
+
+.........................................................
+
+IMAGE
+
+<input type="image" src="" alt="" width="" height="">
+atributos:
+src="" = fonte da imagem
+alt="" = descricao
+width="" = largura da imagem
+heigth="" = altura da imagem
+
+.........................................................
+
+MOUTH
+
+<input type="month"> input que permite a selecao de um mes
+-formato: m de a
+
+.........................................................
+
+NUMBER
+
+<input type="number" min="" max="" step=""> input que permite a entrada somente de numeros
+atributos:
+min="" = valor minimo 
+max="" = valor maximo
+step="" = multiplo ou casa decimal
+ex:
+step=".01" = duas casas decimais.
+
+.........................................................
+
+PASSWORD
+
+<input type="password"> = caixa de senha (com mascara)
+
+.........................................................
+
+RADIO
+
+<input type="radio" name=""> = caixa de selecao unica ocorrencia obrigatoria
+name="" identificar campos de formulários
+
+.........................................................
+
+RANGE
+
+<input type="range" min="" max=""> = input de controle para inserir um número cujo valor exato não é importante  (como um controle deslizante)
+atributos:
+min="" = valor minimo 
+max="" = valor maximo
+.........................................................
+
+RESET
+
+<input type="reset"> = limpa todos os campos preenchidos do formulario
+
+.........................................................
+
+SEARCH
+
+<input type="search"> = input de texto para pesquisa
+
+.........................................................
+
+SUBMIT
+
+<input type="submit" value=""> = botao de envio de informacoes do formulario
+value="" = texto dentro do botao
+
+.........................................................
+
+TEL
+
+<input type="tel"> = input para telefone
+
+.........................................................
+
+TEXT
+
+<input type="text"> = input para texto
+
+.........................................................
+
+TIME
+
+<input type="time"> = input para selecionar uma hora
+-formato: h:min
+
+.........................................................
+
+URL
+
+<input type="url"> = input para adicionar uma URL
+
+.........................................................
+
+WEEK
+
+<input type="week"> = permite a selecao de uma semana especifica do ano
+-formato: semana n, de a
+
+.........................................................
+
+###### Atributos para inputs ########
+
+value=""
+readonly =  somente leitura
+disabled = desabilitado
+size=""
+-types: text, search, tel, url, email, and password.
+
+********************************************************
