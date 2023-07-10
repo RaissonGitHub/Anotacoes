@@ -2,7 +2,7 @@
 
 ## Comandos
 
-### CRIAR BANCO DE DADOS
+* ### CRIAR BANCO DE DADOS
 
 `
 CREATE DATABASE [IF NOT EXISTS] nome_db;
