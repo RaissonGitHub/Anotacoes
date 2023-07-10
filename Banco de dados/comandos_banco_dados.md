@@ -393,6 +393,8 @@ ex:
 SELECT Nome_livro AS L, Preco_Livro AS P FROM tbl_livro;
 `
 
+---
+
 * CONSULTAR COM FUNCOES DE AGREGACAO [MIN,MAX,AVG,COUNT,SUM]
 
 `
@@ -401,11 +403,15 @@ ALL todos os registros    padrao
 DISTINCT valores distintos sem repeticao
 `
 
-MIN valor minimo
-MAX valor maximo
-AVG media aritimetica
-COUNT contagem da quantidade de itens
-SUM soma total dos itens
+MIN = valor minimo
+
+MAX = valor maximo
+
+AVG = media aritimetica
+
+COUNT = contagem da quantidade de itens
+
+SUM = soma total dos itens
 
 ex:
 
@@ -457,14 +463,18 @@ GROUP BY Cidade;
 `
 
 //retorno com GROUP BY
-//Cidade  Total
-//Recife  3240
-//Rj      1700
-//Sp      6745
+
+|Cidade | Total|
+| ----- | ----- |
+|Recife | 3240|
+|Rj     | 1700|
+|Sp     | 6745|
 
 //sem GROUP BY (errado)
-//Cidade  Total
-//Sp      11685
+
+|Cidade |  Total|
+| ----- | ----- |
+|Sp     |  11685|
 
 ---
 
