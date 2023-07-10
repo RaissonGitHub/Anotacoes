@@ -15,7 +15,7 @@
 
 * Italico \*\*texto\*\* ou \_\_texto\_\_
 
-* Taxado \~~texto\~~
+* Taxado \~\~texto\~\~
 
 * Todo em negrito e italico \*\*\*texto\*\*\*
 
@@ -34,7 +34,9 @@
 ou
 
 \`\`\`
+
 texto
+
 texto
 
 \`\`\`
@@ -85,10 +87,14 @@ ex:
 
 ## Lista aninhada
 
-\1. topico
-   \- topico
-     \- topico
-     
+```
+1. topico
+
+  - topico
+  
+    - topico
+```    
+
 ## Lista de tarefas
 
 Feito:
