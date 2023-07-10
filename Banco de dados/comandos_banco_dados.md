@@ -164,6 +164,7 @@ ALTER TABLE nome_tabela
 MODIFY COLUMN nome_coluna tipo_dado
 DEFAULT 'valor_padrao';
 `
+
 ---
 
 * INSERIR REGISTROS NA TABELA
