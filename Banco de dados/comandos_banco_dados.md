@@ -662,15 +662,25 @@ ex: consulta com tres tabelas
 
 `
 SELECT L.Nome_Livro AS Livro,
+
 A.Nome_autor AS Autor,
+
 E.Nome_Editora AS Editora,
+
 L.Preco_Livro AS 'Preço do Livro'
+
 FROM tbl_Livro AS L
+
 INNER JOIN tbl_autores AS A
+
 ON L.ID_autor = A.ID_autor
+
 INNER JOIN tbl_editoras AS E
+
 ON L.ID_editora = E.ID_editora
+
 WHERE E.Nome_Editora LIKE 'O%'
+
 ORDER BY L.Preco_Livro DESC;
 `
 
