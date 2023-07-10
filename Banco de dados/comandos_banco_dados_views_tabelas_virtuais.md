@@ -8,6 +8,8 @@
 
 * Prover isolamento de uma aplicação da estrutura específica de tabelas do banco acessado;
 
+---
+
 ## CRIAR UMA VIEW
 
 `
@@ -27,6 +29,8 @@ INNER JOIN tbl_autores
 ON tbl_Livro.ID_Autor = tbl_autores.ID_Autor;
 `
 
+---
+
 ## USAR A VIEW
 
 ex:
@@ -36,6 +40,8 @@ SELECT Livro, Autor
 FROM vw_LivrosAutores
 ORDER BY Autor;
 `
+
+---
 
 ## ALTERAR UMA VIEW
 
@@ -53,6 +59,8 @@ FROM tbl_Livro
 INNER JOIN tbl_autores
 ON tbl_Livro.ID_Autor = tbl_autores.ID_Autor;
 `
+
+---
 
 ## CONSULTAR VIEWS
 
@@ -74,6 +82,8 @@ SHOW FULL TABLES
 WHERE TABLE_TYPE LIKE 'VIEW';
 `
 
+---
+
 ## VER TODOS AS VIEWS NO SCHEMA
 
 `
@@ -81,6 +91,8 @@ SELECT TABLE_SCHEMA, TABLE_NAME
 FROM information_schema.TABLES
 WHERE TABLE_TYPE LIKE 'VIEW';
 `
+
+---
 
 ## DELETAR UMA VIEW
 
