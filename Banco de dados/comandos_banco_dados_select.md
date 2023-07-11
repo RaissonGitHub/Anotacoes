@@ -18,7 +18,7 @@ SELECT nome_coluna FROM nome_tabela;
 SELECT nome_coluna1, nome_coluna2, nome_coluna3 FROM nome_tabela;
 ```
 
-##CONSULTAR COM ORDENACAO ASC DESC
+## CONSULTAR COM ORDENACAO ASC DESC
 
 
 \#ASC crescente, DESC decrescente
