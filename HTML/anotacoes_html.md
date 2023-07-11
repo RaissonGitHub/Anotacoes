@@ -35,8 +35,11 @@
 ```
 
 Atributos:
+
 rel="" = relacionamento do link
+
 href="" = hyperlink
+
 type="" = tipo do arquivo
 
 ---
@@ -49,21 +52,21 @@ type="" = tipo do arquivo
 
 ---
 
-<body> => corpo do documento
+`<body>` => corpo do documento
 
-<header></header> = Inicio do Cabeçalho
+`<header></header>` = Inicio do Cabeçalho
 
-<nav></nav> = Barra de Navegação
+`<nav></nav>` = Barra de Navegação
 
-<main></main> = Conteudo principal
+`<main></main>` = Conteudo principal
 
-<section></section> = Seção generica dentro de um documento
+`<section></section>` = Seção generica dentro de um documento
 
-<article></article> = Conteudo independente e autônomo
+`<article></article>` = Conteudo independente e autônomo
 
-<aside></aside> = Conteudo relacionado
+`<aside></aside>` = Conteudo relacionado
 
-<footer></footer> = Rodape
+`<footer></footer>` = Rodape
 
 ----
 
@@ -202,7 +205,7 @@ atributo title="" => descricao completa do termo abreviado
 
 `<bdo dir="rtl"></bdo>`
 
-dir="" => orientacao do texto
+`dir=""` => orientacao do texto
 
 ---
 
