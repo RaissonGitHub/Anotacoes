@@ -12,7 +12,7 @@
 <html lang="pt-br"> 	 
 ```
 
-\# atibuto lang => linguagem da pagina
+\# atibuto `lang=""` => linguagem da pagina
 
 ---
 
@@ -24,7 +24,7 @@
 <meta  />
 ``` 
 
-\# charset="UTF-8" = Permite caracteres especiais
+\# `charset="UTF-8"` => Permite caracteres especiais
 
 ---
 
@@ -36,11 +36,11 @@
 
 Atributos:
 
-rel="" = relacionamento do link
+* `rel=""` = relacionamento do link
 
-href="" = hyperlink
+* `href=""` = hyperlink
 
-type="" = tipo do arquivo
+* `type=""` = tipo do arquivo
 
 ---
 
@@ -189,7 +189,7 @@ ex:
 
 `<blockquote cite="https://"> citacao </blockquote>`
 
-atributo cite="" => fonte da citacao
+* atributo `cite=""` => fonte da citacao
 
 ---
 
@@ -197,7 +197,7 @@ atributo cite="" => fonte da citacao
 
 `<abbr title=" termo completo" > termo abreviado</abbr>`
 
-atributo title="" => descricao completa do termo abreviado
+* atributo `title=""` => descricao completa do termo abreviado
 
 ---
 
@@ -205,7 +205,7 @@ atributo title="" => descricao completa do termo abreviado
 
 `<bdo dir="rtl"></bdo>`
 
-`dir=""` => orientacao do texto
+* `dir=""` => orientacao do texto
 
 ---
 
@@ -315,17 +315,17 @@ ex:
 
 atributos:
 
-`min=""` = valor minimo
+* `min=""` => valor minimo
 
-`max=""` = valor maximo
+* `max=""` => valor maximo
 
-`low=""` = cor vermelha
+* `low=""` => cor vermelha
 
-`high=""` = cor verde
+* `high=""` => cor verde
 
-`optimum=""` =  valor ideal entre os valores
+* `optimum=""` =>  valor ideal entre os valores
 
-`value=""` = valor atual
+`value=""` => valor atual
 
 ---
 
@@ -343,7 +343,7 @@ atributos:
 </ol>
 ```
 
-atributo `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
+* atributo `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
 
 -Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
 
@@ -357,7 +357,7 @@ atributo `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
 </ul>
 ```
 
-atributo type="" => indicar a marcacao da lista, variando entre disc, circle, square
+* atributo `type=""` => indicar a marcacao da lista, variando entre disc, circle, square
 
 ---
 
@@ -410,19 +410,19 @@ atributos:
 
 	* `target="_self"` => (padrão) para abrir na página atual
 
-rel="" = natureza do destino
+* `rel=""` = natureza do destino
 
--rel="next"  => indica uma proxima parte
+	* `rel="next"`  => indica uma proxima parte
 
--rel-"prev"  => indica parte anterior
+	* `rel-"prev"`  => indica parte anterior
 
--rel="external"  => indica um link para fora do seu site
+	* `rel="external"`  => indica um link para fora do seu site
 
--rel="nofollow"  => indica que é um link não endossado, como um link pago
+	* `rel="nofollow"`  => indica que é um link não endossado, como um link pago
 
--O rel ajuda o mecanismo de busca encontrar qual o mecanismo de navegação que você está criando;
+O rel ajuda o mecanismo de busca encontrar qual o mecanismo de navegação que você está criando;
 
--Quando utilizar links externos, ou seja, links que te levam para fora do seu site, é recomendado utilzar parametros para que seu site não seja fechado;
+Quando utilizar links externos, ou seja, links que te levam para fora do seu site, é recomendado utilzar parametros para que seu site não seja fechado;
 
 ---
 
@@ -432,43 +432,48 @@ rel="" = natureza do destino
 
 atributos:
 
-href="" = hyperlink do arquivo
+* `href=""` = hyperlink do arquivo
 
-download="" = nome que o arquivo tera ao ser baixado
+* `download=""` = nome que o arquivo tera ao ser baixado
 
-type="" = tipo do arquivo
+* `type=""` = tipo do arquivo
 
-Para arquivos PDF: type="application/pdf"
+Para arquivos PDF: `type="application/pdf"`
 
-Para arquivos de imagem JPEG: type="image/jpeg"
+Para arquivos de imagem JPEG: `type="image/jpeg"`
 
-Para arquivos de imagem PNG: type="image/png"
+Para arquivos de imagem PNG: `type="image/png"`
 
-Para arquivos de planilha Excel: type="application/vnd.ms-excel"
+Para arquivos de planilha Excel: `type="application/vnd.ms-excel"`
 
-Para arquivos de documento Word: type="application/msword"
+Para arquivos de documento Word: `type="application/msword"`
 
-Para arquivos de apresentação PowerPoint: type="application/vnd.ms-powerpoint"
+Para arquivos de apresentação PowerPoint: `type="application/vnd.ms-powerpoint"`
 
-Para arquivos de áudio MP3: type="audio/mpeg"
+Para arquivos de áudio MP3: `type="audio/mpeg"`
 
-Para arquivos de vídeo MP4: type="video/mp4"
+Para arquivos de vídeo MP4: `type="video/mp4"`
 
-target="" = destino do link
+* `target=""` = destino do link
 
--target="_blank" => para uma nova página em branco
+	* `target="_blank"` => para uma nova página em branco
 
--target="_self" => (padrão) para abrir na página atual
+	* `target="_self"` => (padrão) para abrir na página atual
 
-rel="" = natureza do destino
+* `rel=""` = natureza do destino
 
--rel="next"  => indica uma proxima parte
+	* `rel="next"`  => indica uma proxima parte
 
--rel-"prev"  => indica parte anterior
+	* `rel-"prev"`  => indica parte anterior
 
--rel="external"  => indica um link para fora do seu site
+	* `rel="external"`  => indica um link para fora do seu site
 
--rel="nofollow"  => indica que é um link não endossado, como um link pago
+	* `rel="nofollow"`  => indica que é um link não endossado, como um link pago
+
+O rel ajuda o mecanismo de busca encontrar qual o mecanismo de navegação que você está criando;
+
+Quando utilizar links externos, ou seja, links que te levam para fora do seu site, é recomendado utilzar parametros para que seu site não seja fechado;
+
 
 ---
 
