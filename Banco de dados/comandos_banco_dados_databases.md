@@ -1,0 +1,36 @@
+# COMANDOS BASICOS DE CRIACAO DE BD
+
+## CRIAR BANCO DE DADOS
+
+```
+CREATE DATABASE [IF NOT EXISTS] nome_db;
+```
+
+\# IF NOT EXISTS é opicional
+
+
+## MOSTRAR BANCOS
+
+```
+SHOW DATABASES;
+```
+
+## USAR BANCO DE DADOS
+
+```
+USE nome_db;
+```
+
+## VISUALISAR O BANCO DE DADOS ATUAL
+
+```
+SELECT DATABASE();
+```
+
+## DELETAR BANCO 
+
+```
+DROP DATABASE [IF EXISTS] nome_db;
+```
+
+\#IF EXISTS é opicional
