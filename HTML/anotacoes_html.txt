@@ -475,14 +475,14 @@ BUTTON
 atributos:
 value="" = texto dentro do botao
 
-.........................................................
+---
 
 CHECKBOX
 
 <input type="checkbox" name=""> = caixa de multiselecao 0 ou nenhuma ocorrencia
 atributos:
 name="" identificar campos de formulários
-.........................................................
+---
 
 COLOR
 
@@ -490,40 +490,40 @@ COLOR
 value="" = texto dentro do input
 -pode ser definido uma cor
 
-.........................................................
+---
 
 DATE
 
 <input type="date"> = input que permite a selecao de uma data
 -formato:  dd/mm/aaaa
 
-.........................................................
+---
 
 DATETIME-LOCAL
 
 <input type="datetime-local"> input que permite a selecao de uma data e horario
 -formato:  dd/mm/aaaa h:min
 
-.........................................................
+---
 
 EMAIL
 
 <input type="email"> = caixa de email
 -por padrao pede um @ para ser verdadeiro
 
-.........................................................
+---
 
 FILE
 
 <input type="file"> = input que permite o envio de um arquivo
 
-.........................................................
+---
 
 HIDDEN
 
 <input type="hidden"> = campo oculto na pagina
 
-.........................................................
+---
 
 IMAGE
 
@@ -534,14 +534,14 @@ alt="" = descricao
 width="" = largura da imagem
 heigth="" = altura da imagem
 
-.........................................................
+---
 
 MOUTH
 
 <input type="month"> input que permite a selecao de um mes
 -formato: m de a
 
-.........................................................
+---
 
 NUMBER
 
@@ -553,20 +553,20 @@ step="" = multiplo ou casa decimal
 ex:
 step=".01" = duas casas decimais.
 
-.........................................................
+---
 
 PASSWORD
 
 <input type="password"> = caixa de senha (com mascara)
 
-.........................................................
+---
 
 RADIO
 
 <input type="radio" name=""> = caixa de selecao unica ocorrencia obrigatoria
 name="" identificar campos de formulários
 
-.........................................................
+---
 
 RANGE
 
@@ -574,58 +574,58 @@ RANGE
 atributos:
 min="" = valor minimo 
 max="" = valor maximo
-.........................................................
+---
 
 RESET
 
 <input type="reset"> = limpa todos os campos preenchidos do formulario
 
-.........................................................
+---
 
 SEARCH
 
 <input type="search"> = input de texto para pesquisa
 
-.........................................................
+---
 
 SUBMIT
 
 <input type="submit" value=""> = botao de envio de informacoes do formulario
 value="" = texto dentro do botao
 
-.........................................................
+---
 
 TEL
 
 <input type="tel"> = input para telefone
 
-.........................................................
+---
 
 TEXT
 
 <input type="text"> = input para texto
 
-.........................................................
+---
 
 TIME
 
 <input type="time"> = input para selecionar uma hora
 -formato: h:min
 
-.........................................................
+---
 
 URL
 
 <input type="url"> = input para adicionar uma URL
 
-.........................................................
+---
 
 WEEK
 
 <input type="week"> = permite a selecao de uma semana especifica do ano
 -formato: semana n, de a
 
-.........................................................
+---
 
 ###### Atributos para inputs ########
 

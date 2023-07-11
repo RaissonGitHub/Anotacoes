@@ -666,168 +666,244 @@ atributo for="" = especifica o input
 
 * BUTTON
 
-<input type="button" value=""> = botao generico
+`<input type="button" value=""> `
+
+Botao generico
+
 atributos:
+
 value="" = texto dentro do botao
 
-.........................................................
+---
 
-CHECKBOX
+* CHECKBOX
 
-<input type="checkbox" name=""> = caixa de multiselecao 0 ou nenhuma ocorrencia
+`<input type="checkbox" name="">` 
+
+Caixa de multiselecao 0 ou nenhuma ocorrencia
+
 atributos:
+
 name="" identificar campos de formulários
-.........................................................
 
-COLOR
+---
 
-<input type="color" value="#ff0000"> = input que permite a selecao de uma cor
+* COLOR
+
+`<input type="color" value="#ff0000">` 
+
+Input que permite a selecao de uma cor
+
 value="" = texto dentro do input
+
 -pode ser definido uma cor
 
-.........................................................
+---
 
-DATE
+* DATE
 
-<input type="date"> = input que permite a selecao de uma data
+`<input type="date">` 
+
+Input que permite a selecao de uma data
+
 -formato:  dd/mm/aaaa
 
-.........................................................
+---
 
-DATETIME-LOCAL
+* DATETIME-LOCAL
 
-<input type="datetime-local"> input que permite a selecao de uma data e horario
+`<input type="datetime-local">` 
+
+Input que permite a selecao de uma data e horario
+
 -formato:  dd/mm/aaaa h:min
 
-.........................................................
+---
 
-EMAIL
+* EMAIL
 
-<input type="email"> = caixa de email
+`<input type="email">` 
+
+Caixa de email
+
 -por padrao pede um @ para ser verdadeiro
 
-.........................................................
+---
 
-FILE
+* FILE
 
-<input type="file"> = input que permite o envio de um arquivo
+`<input type="file">` 
 
-.........................................................
+Input que permite o envio de um arquivo
 
-HIDDEN
+---
 
-<input type="hidden"> = campo oculto na pagina
+* HIDDEN
 
-.........................................................
+`<input type="hidden">` 
 
-IMAGE
+Campo oculto na pagina
 
-<input type="image" src="" alt="" width="" height="">
+---
+
+* IMAGE
+
+`<input type="image" src="" alt="" width="" height="">`
+
 atributos:
+
 src="" = fonte da imagem
+
 alt="" = descricao
+
 width="" = largura da imagem
+
 heigth="" = altura da imagem
 
-.........................................................
+---
 
-MOUTH
+* MOUTH
 
-<input type="month"> input que permite a selecao de um mes
+`<input type="month">` 
+
+Input que permite a selecao de um mes
+
 -formato: m de a
 
-.........................................................
+---
 
-NUMBER
+* NUMBER
 
-<input type="number" min="" max="" step=""> input que permite a entrada somente de numeros
+`<input type="number" min="" max="" step="">`
+
+Input que permite a entrada somente de numeros
+
 atributos:
+
 min="" = valor minimo 
+
 max="" = valor maximo
+
 step="" = multiplo ou casa decimal
+
 ex:
-step=".01" = duas casas decimais.
 
-.........................................................
+`step=".01"` = duas casas decimais.
 
-PASSWORD
+---
 
-<input type="password"> = caixa de senha (com mascara)
+* PASSWORD
 
-.........................................................
+`<input type="password">` 
 
-RADIO
+Caixa de senha (com mascara)
 
-<input type="radio" name=""> = caixa de selecao unica ocorrencia obrigatoria
+---
+
+* RADIO
+
+`<input type="radio" name="">` 
+
+Caixa de selecao unica ocorrencia obrigatoria
+
 name="" identificar campos de formulários
 
-.........................................................
+---
 
-RANGE
+* RANGE
 
-<input type="range" min="" max=""> = input de controle para inserir um número cujo valor exato não é importante  (como um controle deslizante)
+`<input type="range" min="" max="">` 
+
+Input de controle para inserir um número cujo valor exato não é importante  (como um controle deslizante)
+
 atributos:
+
 min="" = valor minimo 
+
 max="" = valor maximo
-.........................................................
 
-RESET
+---
 
-<input type="reset"> = limpa todos os campos preenchidos do formulario
+* RESET
 
-.........................................................
+`<input type="reset">` 
 
-SEARCH
+Limpa todos os campos preenchidos do formulario
 
-<input type="search"> = input de texto para pesquisa
+---
 
-.........................................................
+* SEARCH
 
-SUBMIT
+`<input type="search">` 
 
-<input type="submit" value=""> = botao de envio de informacoes do formulario
+Input de texto para pesquisa
+
+---
+
+* SUBMIT
+
+`<input type="submit" value="">` 
+
+Botao de envio de informacoes do formulario
+
 value="" = texto dentro do botao
 
-.........................................................
+---
 
-TEL
+* TEL
 
-<input type="tel"> = input para telefone
+`<input type="tel">`
 
-.........................................................
+Input para telefone
 
-TEXT
+---
 
-<input type="text"> = input para texto
+* TEXT
 
-.........................................................
+`<input type="text">` 
 
-TIME
+Input para texto
 
-<input type="time"> = input para selecionar uma hora
+---
+
+* TIME
+
+`<input type="time">` 
+
+Input para selecionar uma hora
+
 -formato: h:min
 
-.........................................................
+---
 
-URL
+* URL
 
-<input type="url"> = input para adicionar uma URL
+`<input type="url">` 
 
-.........................................................
+Input para adicionar uma URL
 
-WEEK
+---
 
-<input type="week"> = permite a selecao de uma semana especifica do ano
+* WEEK
+
+`<input type="week">` 
+
+Permite a selecao de uma semana especifica do ano
+
 -formato: semana n, de a
 
-.........................................................
+---
 
-###### Atributos para inputs ########
+### Atributos para inputs 
 
 value=""
+
 readonly =  somente leitura
+
 disabled = desabilitado
+
 size=""
+
 -para types: text, search, tel, url, email, and password.
 
 ---
