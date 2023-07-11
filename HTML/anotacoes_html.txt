@@ -2,11 +2,11 @@
 
 <html lang="pt-br"> =>	 raiz do documento
 atibuto lang => linguagem da pagina
---------------------------------------------------------
+---
 <head> => cabecario
 <meta charset="UTF-8" /> => permite caracteres especiais
 <meta  /> 
---------------------------------------------------------
+---
 ICONE DE PAGINA
 <link   rel="shortcut icon"   href=""  type="image/x-icon"/>
 atributos:
@@ -14,12 +14,12 @@ rel="" = relacionamento do link
 href="" = hyperlink
 type="" = tipo do arquivo
 
---------------------------------------------------------
+---
 
 TITULO DA PAGINA
 <title> => titulo
 
---------------------------------------------------------
+---
 <body> => corpo do documento
 
 <header></header> = Inicio do Cabeçalho
@@ -30,10 +30,10 @@ TITULO DA PAGINA
 <aside></aside> = Conteudo relacionado
 <footer></footer> = Rodape
 
----------------------------------------------------------
+----
 COMENTARIO
 <!-- texto --> 
---------------------------------------------------------
+---
 
 TITULOS
 <h1></h1> => titulo principal
@@ -41,66 +41,66 @@ TITULOS
 ...
 <h6></h6> => sub titulo
 
---------------------------------------------------------
+---
 
 PARAGRAFO
 <p></p> => paragrafo
 
---------------------------------------------------------
+---
 
 NEGRITO
 <b></b> => nao semantico
 <strong></strong>  => semantico
 
---------------------------------------------------------
+---
 
 ITALICO
 <i></i>    => nao semantico
 <em></em>  => semantico
 
---------------------------------------------------------
+---
 
 MARCACOES efeito de marcatexto
 
 <mark></mark>
 
---------------------------------------------------------
+---
 
 LETRAS MIUDAS
 
 <small></small>
 
---------------------------------------------------------
+---
 
 TEXTO DELETADO
 
 <del></del> 
 
---------------------------------------------------------
+---
 
 TEXTO INSERIDO
 
 <ins></ins>
 
---------------------------------------------------------
+---
 
 TEXTO SOBRESCRITO
 
 <sup></sup>
 
---------------------------------------------------------
+---
 
 TEXTO SUBSCRITO
 
 <sub></sub>
 
---------------------------------------------------------
+---
 
 SUBLINHADO 
 
 <u></u> => nao semantico
 
---------------------------------------------------------
+---
 
 CODIGO FONTE/ PRE-FORMATACAO
 
@@ -121,43 +121,43 @@ ex:
         </code>
 </pre>
 
---------------------------------------------------------
+---
 
 CITACAO
 
 <q></q>
 
---------------------------------------------------------
+---
 
 CITACAO COMPLETA
 
 <blockquote cite="https://"> citacao </blockquote>
 atributo cite="" => fonte da citacao
 
---------------------------------------------------------
+---
 
 ABREVIACAO
 
 <abbr title=" termo completo" > termo abreviado</abbr>
 atributo title="" => descricao completa do termo abreviado
 
---------------------------------------------------------
+---
 
 TEXTO INVERTIDO
 <bdo dir="rtl"></bdo>
 dir="" => orientacao do texto
 
---------------------------------------------------------
+---
 
 ENDERECO
 <address></address>
 
---------------------------------------------------------
+---
 
 QUEBRA DE LINHA
 <br>
 
---------------------------------------------------------
+---
 
 ELEMENTO GENERICO DIV
 <div class="">
@@ -167,7 +167,7 @@ ou
 <div id=""></div>
 -Elemento generico para se colocar class ou id
 
---------------------------------------------------------
+---
 
 ELEMENTO GENERICO DE TEXTO SPAN
 <span class="">texto</span>
@@ -175,7 +175,7 @@ ou
 <span id="">texto</span>
 -Elemento generico de texto para se colocar class ou id
 
---------------------------------------------------------
+---
 
 CARACTERES ESPECIAIS
 para por o sinal de <
@@ -197,7 +197,7 @@ outros:
 δ = &delta;
 ↑ = &uarr;
 
---------------------------------------------------------
+---
 
 EMOJIS
 &#x e depois o codigo do emogi
@@ -206,7 +206,7 @@ ex:
 &#x1F60E;
 &#x1F44D;
 
---------------------------------------------------------
+---
 
 ELEMENTO COM MAIS DETALHES
 <details>
@@ -216,7 +216,7 @@ ELEMENTO COM MAIS DETALHES
 	Detalhes
 </details>
 
---------------------------------------------------------
+---
 
 BARRA DE PROGRESSO
 
@@ -230,13 +230,13 @@ high = cor verde
 optimum =  valor ideal entre os valores
 value = valor atual
 
---------------------------------------------------------
+---
 
 BARRA DE CARREGAMENTO
 
 <progress></progress>
 
---------------------------------------------------------
+---
 
 LISTA ORDENADA
 
@@ -247,7 +247,7 @@ LISTA ORDENADA
 atributo type="" => indicar a marcacao da lista, variando entre 1, A, a, I,  i
 -Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
 
---------------------------------------------------------
+---
 
 LISTA NAO ORDENADA
 
@@ -256,7 +256,7 @@ LISTA NAO ORDENADA
 </ul>
 atributo type="" => indicar a marcacao da lista, variando entre disc, circle, square
 
---------------------------------------------------------
+---
 
 MISTURA DE LISTAS
 ex:
@@ -273,7 +273,7 @@ ex:
 	</ul>
 </ol>
 
---------------------------------------------------------
+---
 
 LISTA DE DEFINICOES
 
@@ -282,7 +282,7 @@ LISTA DE DEFINICOES
 	<dd>Descricao</dd>
 </dl>
 
---------------------------------------------------------
+---
 
 LINKS E ANCORAS
 
@@ -304,7 +304,7 @@ rel="" = natureza do destino
 -O rel ajuda o mecanismo de busca encontrar qual o mecanismo de navegação que você está criando;
 -Quando utilizar links externos, ou seja, links que te levam para fora do seu site, é recomendado utilzar parametros para que seu site não seja fechado;
 
---------------------------------------------------------
+---
 
 LINK DE DOWNLOAD
 <a href="" download="" type="" target="_blanck" rel="external">texto do link</a>
@@ -335,7 +335,7 @@ rel="" = natureza do destino
 -rel="external"  => indica um link para fora do seu site
 -rel="nofollow"  => indica que é um link não endossado, como um link pago
 
---------------------------------------------------------
+---
 
 IMAGENS
 
@@ -345,7 +345,7 @@ src="" = fonte da imagem
 -pode ser interno ou externo
 alt="" = descricao da imagem, ajuda na acessibilidade
 
---------------------------------------------------------
+---
 
 IMAGENS DINAMICAS
 <picture>
@@ -363,7 +363,7 @@ type="" = indica o tipo de imagem a ser definida
 media="" = indica o tamanho maximo
 srcset ="" =  configura o link da imagem que será carregada quando o tamanho indicado for atingido
 
---------------------------------------------------------
+---
 
 AUDIO
 <audio src=" controls autoplay loop></audio>
@@ -395,7 +395,7 @@ preload="none" = não carrega nada antes do usuario requisitar o botão nos cont
 src="" = fonte do audio
 type="" = tipo do arquivo de audio
 
---------------------------------------------------------
+---
 
 VIDEOS
 
@@ -424,7 +424,7 @@ externos:
 ex:
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j5RGWhxiI_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
---------------------------------------------------------
+---
 
 FORMULARIO
 

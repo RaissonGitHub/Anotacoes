@@ -1,116 +1,167 @@
+# Tags HTML
 
-<!DOCTYPE html> => tipo de documento 
+## Tipo de documento
 
-<html lang="pt-br"> =>	 raiz do documento
-atibuto lang => linguagem da pagina
+```
+<!DOCTYPE html>   
+```
+
+## Raiz do documento
+
+```
+<html lang="pt-br"> 	 
+```
+
+\# atibuto lang => linguagem da pagina
+
 ---
-<head> => cabecario
-<meta charset="UTF-8" /> => permite caracteres especiais
-<meta  /> 
---------------------------------------------------------
-ICONE DE PAGINA
+
+## Cabecario
+
+```
+<head>  
+<meta charset="UTF-8" /> 
+<meta  />
+``` 
+
+\# charset="UTF-8" = Permite caracteres especiais
+
+---
+
+## ICONE DE PAGINA
+
+```
 <link   rel="shortcut icon"   href=""  type="image/x-icon"/>
-atributos:
+```
+
+Atributos:
 rel="" = relacionamento do link
 href="" = hyperlink
 type="" = tipo do arquivo
 
---------------------------------------------------------
+---
 
-TITULO DA PAGINA
-<title> => titulo
+## TITULO DA PAGINA
 
---------------------------------------------------------
+```
+<title></title>
+```
+
+---
+
 <body> => corpo do documento
 
 <header></header> = Inicio do Cabeçalho
+
 <nav></nav> = Barra de Navegação
+
 <main></main> = Conteudo principal
+
 <section></section> = Seção generica dentro de um documento
+
 <article></article> = Conteudo independente e autônomo
+
 <aside></aside> = Conteudo relacionado
+
 <footer></footer> = Rodape
 
----------------------------------------------------------
-COMENTARIO
+----
+
+## COMENTARIO
+
+```
 <!-- texto --> 
---------------------------------------------------------
+```
+---
 
-TITULOS
-<h1></h1> => titulo principal
-<h2></h2> => sub titulo
+## TITULOS
+
+
+`<h1></h1>` => titulo principal
+
+`<h2></h2>` => sub titulo
+
 ...
-<h6></h6> => sub titulo
 
---------------------------------------------------------
+`<h6></h6>` => sub titulo
 
-PARAGRAFO
-<p></p> => paragrafo
+---
 
---------------------------------------------------------
+## PARAGRAFO
 
-NEGRITO
-<b></b> => nao semantico
-<strong></strong>  => semantico
+`<p></p>` => paragrafo
 
---------------------------------------------------------
+---
 
-ITALICO
-<i></i>    => nao semantico
-<em></em>  => semantico
+## NEGRITO
 
---------------------------------------------------------
+`<b></b>` => nao semantico
 
-MARCACOES efeito de marcatexto
+`<strong></strong>`  => semantico
 
-<mark></mark>
+---
 
---------------------------------------------------------
+## ITALICO
 
-LETRAS MIUDAS
+`<i></i>`    => nao semantico
 
-<small></small>
+`<em></em>`  => semantico
 
---------------------------------------------------------
+---
 
-TEXTO DELETADO
+## MARCACOES efeito de marcatexto
 
-<del></del> 
+`<mark></mark>`
 
---------------------------------------------------------
+---
 
-TEXTO INSERIDO
+## LETRAS MIUDAS
 
-<ins></ins>
+`<small></small>`
 
---------------------------------------------------------
+---
 
-TEXTO SOBRESCRITO
+## TEXTO DELETADO
 
-<sup></sup>
+`<del></del>` 
 
---------------------------------------------------------
+---
 
-TEXTO SUBSCRITO
+## TEXTO INSERIDO
 
-<sub></sub>
+`<ins></ins>`
 
---------------------------------------------------------
+---
 
-SUBLINHADO 
+## TEXTO SOBRESCRITO
 
-<u></u> => nao semantico
+`<sup></sup>`
 
---------------------------------------------------------
+---
 
-CODIGO FONTE/ PRE-FORMATACAO
+## TEXTO SUBSCRITO
 
-<code></code>
+`<sub></sub>`
+
+---
+
+## SUBLINHADO 
+
+`<u></u>` => nao semantico
+
+---
+
+## CODIGO FONTE/ PRE-FORMATACAO
+
+`<code></code>`
 
 ex:
-<p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p>
+
+`<p>O comando <code>document.getElementById('teste')</code> é escrito em JavaScript.</p>`
 
 ex:
+
+```
 <pre>
         <code>
         num = int(input('Digite um número'))
@@ -121,146 +172,196 @@ ex:
         print('Fim do programa')
         </code>
 </pre>
+```
 
---------------------------------------------------------
+---
 
-CITACAO
+## CITACAO
 
-<q></q>
+`<q></q>`
 
---------------------------------------------------------
+---
 
-CITACAO COMPLETA
+## CITACAO COMPLETA
 
-<blockquote cite="https://"> citacao </blockquote>
+`<blockquote cite="https://"> citacao </blockquote>`
+
 atributo cite="" => fonte da citacao
 
---------------------------------------------------------
+---
 
-ABREVIACAO
+## ABREVIACAO
 
-<abbr title=" termo completo" > termo abreviado</abbr>
+`<abbr title=" termo completo" > termo abreviado</abbr>`
+
 atributo title="" => descricao completa do termo abreviado
 
---------------------------------------------------------
+---
 
-TEXTO INVERTIDO
-<bdo dir="rtl"></bdo>
+## TEXTO INVERTIDO
+
+`<bdo dir="rtl"></bdo>`
+
 dir="" => orientacao do texto
 
---------------------------------------------------------
+---
 
-ENDERECO
-<address></address>
+## ENDERECO
 
---------------------------------------------------------
+`<address></address>`
 
-QUEBRA DE LINHA
-<br>
+---
 
---------------------------------------------------------
+## QUEBRA DE LINHA
 
-ELEMENTO GENERICO DIV
+`<br>`
+
+---
+
+## ELEMENTO GENERICO DIV
+
+```
 <div class="">
          conteudo
 </div>
+```
+
 ou 
+
+```
 <div id=""></div>
--Elemento generico para se colocar class ou id
+```
+\- Elemento generico para se colocar class ou id
 
---------------------------------------------------------
+---
 
-ELEMENTO GENERICO DE TEXTO SPAN
-<span class="">texto</span>
+## ELEMENTO GENERICO DE TEXTO SPAN
+
+`<span class="">texto</span>`
+
 ou 
-<span id="">texto</span>
--Elemento generico de texto para se colocar class ou id
 
---------------------------------------------------------
+`<span id="">texto</span>`
 
-CARACTERES ESPECIAIS
-para por o sinal de <
-&lt;
+\- Elemento generico de texto para se colocar class ou id
 
-para por o sinal de >
-&gt
+---
 
-outros:
+## CARACTERES ESPECIAIS
 
-® = &reg;
-© = &copy;
-™ = &trade;
-€ = &euro;
-£ = &pound;
-¥ = &yen;
-¢ = &cent;
-Δ = &Delta;
-δ = &delta;
-↑ = &uarr;
+Para por o sinal de <
 
---------------------------------------------------------
+`&lt;`
 
-EMOJIS
+Para por o sinal de >
+
+`&gt;`
+
+Outros:
+
+® = `&reg;`
+
+© = `&copy;`
+
+™ = `&trade;`
+
+€ = `&euro;`
+
+£ = `&pound;`
+
+¥ = `&yen;`
+
+¢ = `&cent;`
+
+Δ = `&Delta;`
+
+δ = `&delta;`
+
+↑ = `&uarr;`
+
+---
+
+## EMOJIS
+
 &#x e depois o codigo do emogi
 
 ex:
-&#x1F60E;
-&#x1F44D;
 
---------------------------------------------------------
+`&#x1F60E;`
 
-ELEMENTO COM MAIS DETALHES
+`&#x1F44D;`
+
+---
+
+## ELEMENTO COM MAIS DETALHES
+
+```
 <details>
 	<summary>
 	      Elemento
 	</summary>
 	Detalhes
 </details>
+```
 
---------------------------------------------------------
+---
 
-BARRA DE PROGRESSO
+## BARRA DE PROGRESSO
 
-<meter min="0" max="100" low="40" high="90" optimum="100" value="70"></meter>
+`<meter min="0" max="100" low="40" high="90" optimum="100" value="70"></meter>`
 
 atributos:
+
 min = valor minimo
+
 max = valor maximo
+
 low = cor vermelha
+
 high = cor verde
+
 optimum =  valor ideal entre os valores
+
 value = valor atual
 
---------------------------------------------------------
+---
 
-BARRA DE CARREGAMENTO
+## BARRA DE CARREGAMENTO
 
-<progress></progress>
+`<progress></progress>`
 
---------------------------------------------------------
+---
 
-LISTA ORDENADA
+## LISTA ORDENADA
 
+```
 <ol type="">
         <li>topico<li> => linha ou topico da lista
 </ol>
+```
 
 atributo type="" => indicar a marcacao da lista, variando entre 1, A, a, I,  i
 -Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
 
---------------------------------------------------------
+---
 
-LISTA NAO ORDENADA
+## LISTA NAO ORDENADA
 
+```
 <ul type="">
       <li>topico<li> 
 </ul>
+```
+
 atributo type="" => indicar a marcacao da lista, variando entre disc, circle, square
 
---------------------------------------------------------
+---
 
-MISTURA DE LISTAS
+## MISTURA DE LISTAS
+
 ex:
+
+```
 <ol>
 	<li>SNES</li>
 	<ul type="disc">
@@ -273,42 +374,57 @@ ex:
 		<li>Gta San Andreas</li>
 	</ul>
 </ol>
+```
 
---------------------------------------------------------
+---
 
-LISTA DE DEFINICOES
+## LISTA DE DEFINICOES
 
+```
 <dl>
 	<dt>Termo</dt>
 	<dd>Descricao</dd>
 </dl>
+```
 
---------------------------------------------------------
+---
 
-LINKS E ANCORAS
+## LINKS E ANCORAS
 
-<a href="" target=""  rel="">Texto do link</a>
+
+`<a href="" target=""  rel="">Texto do link</a>`
+
 atributos:
 href="" = hyperlink do arquivo
+
 -pode ser tanto externo quanto interno, ou até dentro da pagina
 
 target="" = destino do link
+
 -target="_blank" => para uma nova página em branco
+
 -target="_self" => (padrão) para abrir na página atual
 
 rel="" = natureza do destino
+
 -rel="next"  => indica uma proxima parte
+
 -rel-"prev"  => indica parte anterior
+
 -rel="external"  => indica um link para fora do seu site
+
 -rel="nofollow"  => indica que é um link não endossado, como um link pago
 
 -O rel ajuda o mecanismo de busca encontrar qual o mecanismo de navegação que você está criando;
+
 -Quando utilizar links externos, ou seja, links que te levam para fora do seu site, é recomendado utilzar parametros para que seu site não seja fechado;
 
---------------------------------------------------------
+---
 
-LINK DE DOWNLOAD
-<a href="" download="" type="" target="_blanck" rel="external">texto do link</a>
+## LINK DE DOWNLOAD
+
+`<a href="" download="" type="" target="_blanck" rel="external">texto do link</a>`
+
 atributos:
 
 href="" = hyperlink do arquivo
@@ -318,89 +434,138 @@ download="" = nome que o arquivo tera ao ser baixado
 type="" = tipo do arquivo
 
 Para arquivos PDF: type="application/pdf"
+
 Para arquivos de imagem JPEG: type="image/jpeg"
+
 Para arquivos de imagem PNG: type="image/png"
+
 Para arquivos de planilha Excel: type="application/vnd.ms-excel"
+
 Para arquivos de documento Word: type="application/msword"
+
 Para arquivos de apresentação PowerPoint: type="application/vnd.ms-powerpoint"
+
 Para arquivos de áudio MP3: type="audio/mpeg"
+
 Para arquivos de vídeo MP4: type="video/mp4"
 
 target="" = destino do link
+
 -target="_blank" => para uma nova página em branco
+
 -target="_self" => (padrão) para abrir na página atual
 
 rel="" = natureza do destino
+
 -rel="next"  => indica uma proxima parte
+
 -rel-"prev"  => indica parte anterior
+
 -rel="external"  => indica um link para fora do seu site
+
 -rel="nofollow"  => indica que é um link não endossado, como um link pago
 
---------------------------------------------------------
+---
 
-IMAGENS
+## IMAGENS
 
-<img src="" alt="" />
+`<img src="" alt="" />`
+
 atributos:
+
 src="" = fonte da imagem
+
 -pode ser interno ou externo
+
 alt="" = descricao da imagem, ajuda na acessibilidade
 
---------------------------------------------------------
+---
 
-IMAGENS DINAMICAS
+## IMAGENS DINAMICAS
+
+```
 <picture>
 	<source media="(max-width:750px)" srcset="" type="image/png" />
 	<source media="(max-width: 1050px)" srcset="" type="image/png" />
 	<img src="" alt="imagem flexivel" />
 </picture>
+```
+
 -A tag picture permite que vc crie varios sources => várias fontes para imagens
+
 -a ordem é: img, source media="(max-width: 1050px)",source media="(max-width:750px)"
+
 atributos:
+
 src="" = fonte da imagem
+
 -pode ser interno ou externo
+
 alt="" = descricao da imagem, ajuda na acessibilidade
+
 type="" = indica o tipo de imagem a ser definida
+
 media="" = indica o tamanho maximo
+
 srcset ="" =  configura o link da imagem que será carregada quando o tamanho indicado for atingido
 
---------------------------------------------------------
+---
 
-AUDIO
-<audio src=" controls autoplay loop></audio>
+## AUDIO
+`<audio src=" controls autoplay loop></audio>`
+
 atributos:
+
 src="" = fonte do audio
+
 controls => controles de audio
+
 autoplay => reprodução automatica
+
 loop => repetição do audio sem interrupções
+
 -Não esqueça de colocar controls para que os controles de audio apareçam na pagina
+
 -Os formatos compartiveis de áudio são MP3, WAV e OGG
+
 -wav não é recomendado, já que são arquivos de grande porte
 
 
-AUDIO opcao recomendada
+## AUDIO opcao recomendada
+
+```
 <audio preload="metadata" controls autoplay loop>
 	<source src="" type="audio/mpeg" />
 	<source src="" type="audio/ogg" />
 	<source src="" type="audio/wav" />
 	<p>Infelizmente seu navegador não consegue reproduzir audio.</p>         
 </audio>
+```
+
 -ordem: mpeg, ogg, wav, <p>
+
 atributos:
+
 preload="" = o que deve ser feito com o audio
 
 preload="auto" = a pagina só é carregado após o áudio ser carregado => PERIGOSO!!!
+
 preload="metadata" = a pagina carrega algumas informações do áudio como data e duração antes
+
 preload="none" = não carrega nada antes do usuario requisitar o botão nos controles
 
+
 src="" = fonte do audio
+
 type="" = tipo do arquivo de audio
 
---------------------------------------------------------
+---
 
-VIDEOS
+## VIDEOS
 
 internos:
+
+```
 <video poster="" width="" height="" controls autoplay loop> 
 	<source src="" type="video/webm">
 	<source src="" type="video/m4v">
@@ -408,69 +573,98 @@ internos:
 	<source src="" type="video/ogv">
 	<p>Seu navegador não tem suporte a videos.</p>
 </video>
+```
+
 -ordem: webm, m4v, mp4, ogv, <p>
+
 atributos:
+
 poster="" = define uma capa para o video, especificar o local
+
 width="" = define a largura da tela do video
+
 height="" = define a largura da tela do video
+
 controls => controles de audio
+
 autoplay => reprodução automatica
+
 loop => repetição do video sem interrupções
+
 src="" = fonte do audio
+
 type="" = tipo do arquivo de audio
 
 externos:
+
 -Para vídeos retirados do youtube
+
 -Clique com compartilhar, incorporar, copie e cole o link
+
 ex:
+
+```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j5RGWhxiI_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+```
+---
 
---------------------------------------------------------
+## FORMULARIO
 
-FORMULARIO
-
+```
 <form method="" action="">
 </form>
+```
 
 atributos:
+
 method="" = especifica o metodo do formulario
+
 method="get" = pega dados dos campos do formulario e coloca na url
+
 method="post" = envia os dados dos campos do formulario
 
 action="" = especifica para onde enviar os dados do formulário
 
-********************************************************
+---
 
-!!!!!!!  A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG <form>  !!!!!!!!!
+!!!!!!!  A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  !!!!!!!!!
 
-FIELDSET
+## FIELDSET
 
-<fieldset> = agrupar elementos do formulario
-</fieldset>
+`<fieldset></fieldset>`
 
-********************************************************
 
-LEGEND
+agrupar elementos do formulario
 
+---
+
+## LEGEND
+
+```
 <fieldset>
-	<legend>Title</legend> = titulo para o agrupamento
+	<legend>Title</legend> 
 <fieldset>
+```
 
-********************************************************
+	= titulo para o agrupamento
 
-LABEL
+---
 
-<label for="">Nome</label> = nome para o input
+## LABEL
+
+``<label for="">Nome</label>`` = nome para o input
+
 atributo for="" = especifica o input
+
 -deve ser colocado ou id, class
 
-********************************************************
+---
 
-INPUTS
+## INPUTS
 
-<input type="">
+`<input type="">`
 
-BUTTON
+* BUTTON
 
 <input type="button" value=""> = botao generico
 atributos:
@@ -636,4 +830,4 @@ disabled = desabilitado
 size=""
 -para types: text, search, tel, url, email, and password.
 
-********************************************************
+---
