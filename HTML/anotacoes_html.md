@@ -315,17 +315,17 @@ ex:
 
 atributos:
 
-min = valor minimo
+`min=""` = valor minimo
 
-max = valor maximo
+`max=""` = valor maximo
 
-low = cor vermelha
+`low=""` = cor vermelha
 
-high = cor verde
+`high=""` = cor verde
 
-optimum =  valor ideal entre os valores
+`optimum=""` =  valor ideal entre os valores
 
-value = valor atual
+`value=""` = valor atual
 
 ---
 
@@ -343,7 +343,8 @@ value = valor atual
 </ol>
 ```
 
-atributo type="" => indicar a marcacao da lista, variando entre 1, A, a, I,  i
+atributo `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
+
 -Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
 
 ---
@@ -398,15 +399,16 @@ ex:
 `<a href="" target=""  rel="">Texto do link</a>`
 
 atributos:
-href="" = hyperlink do arquivo
+
+* `href=""` => hyperlink do arquivo
 
 -pode ser tanto externo quanto interno, ou até dentro da pagina
 
-target="" = destino do link
+* `target=""` => destino do link
 
--target="_blank" => para uma nova página em branco
+	* `target="_blank"` => para uma nova página em branco
 
--target="_self" => (padrão) para abrir na página atual
+	* `target="_self"` => (padrão) para abrir na página atual
 
 rel="" = natureza do destino
 
