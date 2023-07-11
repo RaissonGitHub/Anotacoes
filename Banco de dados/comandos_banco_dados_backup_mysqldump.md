@@ -25,7 +25,7 @@ mysql -u root -p banco_criado < backup.sql
 
 ex:
  
-\#crie um banco de dados em novo chamado teste-restore
+\#crie um banco de dados novo chamado teste-restore
 
 ```
 mysql -u root -p teste-restore < /home/fabio/db_Biblioteca.sql
