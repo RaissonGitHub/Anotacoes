@@ -703,6 +703,7 @@ Atributos:
 - [ ] dfn
 - [ ] datalist
 - [ ] button
+- [ ] textarea
 
 # A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  
 
