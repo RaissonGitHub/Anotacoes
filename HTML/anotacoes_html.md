@@ -1012,16 +1012,16 @@ Formato: semana n, de a
 
 ### Atributos para inputs 
 
-| Atributo | Value | Uso |Descricao |
+| Atributo | Value | Uso | Descricao |
+| ---     | ---  | ---| ---|
+| `value=""` | text | Valor | a  |
 
-|`value=""`| |  | |
+|`readonly` |  none | Somente leitura | a | 
 
-|`readonly` |  Somente leitura| | |
+|`disabled` | none | Desabilitado| a |  
 
-|`disabled` | | Desabilitado| |  
+ |`size=""`| number | Tamanho | Para types: text, search, tel, url, email, and password.|
 
- |`size=""`|  | Tamanho | Para types: text, search, tel, url, email, and password.|
-
- |`autocomplete=""`|  |  | |
+ |`autocomplete=""`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
 
 ---
