@@ -36,11 +36,11 @@
 
 Atributos:
 
-* `rel=""` = relacionamento do link
+* `rel=""` => relacionamento do link
 
-* `href=""` = hyperlink
+* `href=""` => hyperlink
 
-* `type=""` = tipo do arquivo
+* `type=""` => tipo do arquivo
 
 ---
 
@@ -54,19 +54,19 @@ Atributos:
 
 `<body>` => corpo do documento
 
-`<header></header>` = Inicio do Cabeçalho
+`<header></header>` => Inicio do Cabeçalho
 
-`<nav></nav>` = Barra de Navegação
+`<nav></nav>` => Barra de Navegação
 
-`<main></main>` = Conteudo principal
+`<main></main>` => Conteudo principal
 
-`<section></section>` = Seção generica dentro de um documento
+`<section></section>` => Seção generica dentro de um documento
 
-`<article></article>` = Conteudo independente e autônomo
+`<article></article>` => Conteudo independente e autônomo
 
-`<aside></aside>` = Conteudo relacionado
+`<aside></aside>` => Conteudo relacionado
 
-`<footer></footer>` = Rodape
+`<footer></footer>` => Rodape
 
 ----
 
@@ -167,8 +167,8 @@ ex:
 ```
 <pre>
         <code>
-        num = int(input('Digite um número'))
-        if num % 2 == 0:
+        num => int(input('Digite um número'))
+        if num % 2 ==> 0:
             print(f'o número {num} é Par)
         else:
             print(f'O número {num} é Ímpar)
@@ -262,25 +262,25 @@ Para por o sinal de >
 
 Outros:
 
-® = `&reg;`
+® => `&reg;`
 
-© = `&copy;`
+© => `&copy;`
 
-™ = `&trade;`
+™ => `&trade;`
 
-€ = `&euro;`
+€ => `&euro;`
 
-£ = `&pound;`
+£ => `&pound;`
 
-¥ = `&yen;`
+¥ => `&yen;`
 
-¢ = `&cent;`
+¢ => `&cent;`
 
-Δ = `&Delta;`
+Δ => `&Delta;`
 
-δ = `&delta;`
+δ => `&delta;`
 
-↑ = `&uarr;`
+↑ => `&uarr;`
 
 ---
 
@@ -402,7 +402,7 @@ atributos:
 
 * `href=""` => hyperlink do arquivo
 
--pode ser tanto externo quanto interno, ou até dentro da pagina
+Pode ser tanto externo quanto interno, ou até dentro da pagina
 
 * `target=""` => destino do link
 
@@ -410,7 +410,7 @@ atributos:
 
 	* `target="_self"` => (padrão) para abrir na página atual
 
-* `rel=""` = natureza do destino
+* `rel=""` => natureza do destino
 
 	* `rel="next"`  => indica uma proxima parte
 
@@ -432,11 +432,11 @@ Quando utilizar links externos, ou seja, links que te levam para fora do seu sit
 
 atributos:
 
-* `href=""` = hyperlink do arquivo
+* `href=""` => hyperlink do arquivo
 
-* `download=""` = nome que o arquivo tera ao ser baixado
+* `download=""` => nome que o arquivo tera ao ser baixado
 
-* `type=""` = tipo do arquivo
+* `type=""` => tipo do arquivo
 
 Para arquivos PDF: `type="application/pdf"`
 
@@ -454,13 +454,13 @@ Para arquivos de áudio MP3: `type="audio/mpeg"`
 
 Para arquivos de vídeo MP4: `type="video/mp4"`
 
-* `target=""` = destino do link
+* `target=""` => destino do link
 
 	* `target="_blank"` => para uma nova página em branco
 
 	* `target="_self"` => (padrão) para abrir na página atual
 
-* `rel=""` = natureza do destino
+* `rel=""` => natureza do destino
 
 	* `rel="next"`  => indica uma proxima parte
 
@@ -483,11 +483,11 @@ Quando utilizar links externos, ou seja, links que te levam para fora do seu sit
 
 atributos:
 
-src="" = fonte da imagem
+* `src=""` => fonte da imagem
 
--pode ser interno ou externo
+Pode ser interno ou externo
 
-alt="" = descricao da imagem, ajuda na acessibilidade
+* `alt="" =` => descricao da imagem, ajuda na acessibilidade
 
 ---
 
@@ -501,23 +501,23 @@ alt="" = descricao da imagem, ajuda na acessibilidade
 </picture>
 ```
 
--A tag picture permite que vc crie varios sources => várias fontes para imagens
+A tag picture permite que vc crie varios sources => várias fontes para imagens
 
--a ordem é: img, source media="(max-width: 1050px)",source media="(max-width:750px)"
+A ordem é: img, source media="(max-width: 1050px)",source media="(max-width:750px)"
 
 atributos:
 
-src="" = fonte da imagem
+* `src=""` => fonte da imagem
 
--pode ser interno ou externo
+Pode ser interno ou externo
 
-alt="" = descricao da imagem, ajuda na acessibilidade
+* `alt=""` => descricao da imagem, ajuda na acessibilidade
 
-type="" = indica o tipo de imagem a ser definida
+* `type=""` => indica o tipo de imagem a ser definida
 
-media="" = indica o tamanho maximo
+* `media=""` => indica o tamanho maximo
 
-srcset ="" =  configura o link da imagem que será carregada quando o tamanho indicado for atingido
+* `srcset =""` =>  configura o link da imagem que será carregada quando o tamanho indicado for atingido
 
 ---
 
@@ -526,19 +526,19 @@ srcset ="" =  configura o link da imagem que será carregada quando o tamanho in
 
 atributos:
 
-src="" = fonte do audio
+* `src=""` => fonte do audio
 
-controls => controles de audio
+* `controls` => controles de audio
 
-autoplay => reprodução automatica
+* `autoplay` => reprodução automatica
 
-loop => repetição do audio sem interrupções
+* `loop` => repetição do audio sem interrupções
 
--Não esqueça de colocar controls para que os controles de audio apareçam na pagina
+\# Não esqueça de colocar controls para que os controles de audio apareçam na pagina
 
--Os formatos compartiveis de áudio são MP3, WAV e OGG
+Os formatos compartiveis de áudio são MP3, WAV e OGG
 
--wav não é recomendado, já que são arquivos de grande porte
+\# WAV não é recomendado, já que são arquivos de grande porte
 
 
 ## AUDIO opcao recomendada
@@ -552,22 +552,22 @@ loop => repetição do audio sem interrupções
 </audio>
 ```
 
--ordem: mpeg, ogg, wav, <p>
+Ordem: mpeg, ogg, wav, <p>
 
 atributos:
 
-preload="" = o que deve ser feito com o audio
+* `preload=""` => o que deve ser feito com o audio
 
-preload="auto" = a pagina só é carregado após o áudio ser carregado => PERIGOSO!!!
+	* `preload="auto"` => a pagina só é carregado após o áudio ser carregado => PERIGOSO!!!
 
-preload="metadata" = a pagina carrega algumas informações do áudio como data e duração antes
+	* `preload="metadata"` => a pagina carrega algumas informações do áudio como data e duração antes
 
-preload="none" = não carrega nada antes do usuario requisitar o botão nos controles
+	* `preload="none"` => não carrega nada antes do usuario requisitar o botão nos controles
 
 
-src="" = fonte do audio
+* `src=""` => fonte do audio
 
-type="" = tipo do arquivo de audio
+* `type=""` => tipo do arquivo de audio
 
 ---
 
@@ -585,31 +585,31 @@ internos:
 </video>
 ```
 
--ordem: webm, m4v, mp4, ogv, <p>
+Ordem: webm, m4v, mp4, ogv, <p>
 
 atributos:
 
-poster="" = define uma capa para o video, especificar o local
+* `poster=""` => define uma capa para o video, especificar o local
 
-width="" = define a largura da tela do video
+* `width=""` => define a largura da tela do video
 
-height="" = define a largura da tela do video
+* `height=""` => define a largura da tela do video
 
-controls => controles de audio
+* `controls` => controles de audio
 
-autoplay => reprodução automatica
+* `autoplay` => reprodução automatica
 
-loop => repetição do video sem interrupções
+* `loop` => repetição do video sem interrupções
 
-src="" = fonte do audio
+* `src=""` => fonte do audio
 
-type="" = tipo do arquivo de audio
+* `type=""` => tipo do arquivo de audio
 
 externos:
 
--Para vídeos retirados do youtube
+\# Para vídeos retirados do youtube
 
--Clique com compartilhar, incorporar, copie e cole o link
+\# Clique com compartilhar, incorporar, copie e cole o link
 
 ex:
 
@@ -627,24 +627,24 @@ ex:
 
 atributos:
 
-method="" = especifica o metodo do formulario
+* `method=""` => especifica o metodo do formulario
 
-method="get" = pega dados dos campos do formulario e coloca na url
+	* `method="get"` => pega dados dos campos do formulario e coloca na url
 
-method="post" = envia os dados dos campos do formulario
+	* `method="post"` => envia os dados dos campos do formulario
 
-action="" = especifica para onde enviar os dados do formulário
+* `action=""` => especifica para onde enviar os dados do formulário
 
 ---
 
-!!!!!!!  A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  !!!!!!!!!
+# A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  
 
 ## FIELDSET
 
 `<fieldset></fieldset>`
 
 
-agrupar elementos do formulario
+Agrupar elementos do formulario
 
 ---
 
@@ -656,17 +656,17 @@ agrupar elementos do formulario
 <fieldset>
 ```
 
-	= titulo para o agrupamento
+Titulo para o agrupamento
 
 ---
 
 ## LABEL
 
-``<label for="">Nome</label>`` = nome para o input
+``<label for="">Nome</label>`` => nome para o input
 
-atributo for="" = especifica o input
+* atributo `for=""` => especifica o input
 
--deve ser colocado ou id, class
+\# Deve ser colocado ou id, class referente ao input
 
 ---
 
@@ -682,7 +682,7 @@ Botao generico
 
 atributos:
 
-value="" = texto dentro do botao
+	* `value=""` => texto dentro do botao
 
 ---
 
@@ -694,7 +694,7 @@ Caixa de multiselecao 0 ou nenhuma ocorrencia
 
 atributos:
 
-name="" identificar campos de formulários
+	* `name=""` => identificar campos de formulários
 
 ---
 
@@ -704,7 +704,7 @@ name="" identificar campos de formulários
 
 Input que permite a selecao de uma cor
 
-value="" = texto dentro do input
+value="" => texto dentro do input
 
 -pode ser definido uma cor
 
@@ -762,13 +762,13 @@ Campo oculto na pagina
 
 atributos:
 
-src="" = fonte da imagem
+src="" => fonte da imagem
 
-alt="" = descricao
+alt="" => descricao
 
-width="" = largura da imagem
+width="" => largura da imagem
 
-heigth="" = altura da imagem
+heigth="" => altura da imagem
 
 ---
 
@@ -790,15 +790,15 @@ Input que permite a entrada somente de numeros
 
 atributos:
 
-min="" = valor minimo 
+min="" => valor minimo 
 
-max="" = valor maximo
+max="" => valor maximo
 
-step="" = multiplo ou casa decimal
+step="" => multiplo ou casa decimal
 
 ex:
 
-`step=".01"` = duas casas decimais.
+`step=".01"` => duas casas decimais.
 
 ---
 
@@ -828,9 +828,9 @@ Input de controle para inserir um número cujo valor exato não é importante  (
 
 atributos:
 
-min="" = valor minimo 
+min="" => valor minimo 
 
-max="" = valor maximo
+max="" => valor maximo
 
 ---
 
@@ -856,7 +856,7 @@ Input de texto para pesquisa
 
 Botao de envio de informacoes do formulario
 
-value="" = texto dentro do botao
+value="" => texto dentro do botao
 
 ---
 
@@ -908,9 +908,9 @@ Permite a selecao de uma semana especifica do ano
 
 value=""
 
-readonly =  somente leitura
+readonly =>  somente leitura
 
-disabled = desabilitado
+disabled => desabilitado
 
 size=""
 
