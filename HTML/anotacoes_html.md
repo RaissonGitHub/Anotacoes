@@ -674,7 +674,7 @@ Titulo para o agrupamento
 
 `<input type="">`
 
-* BUTTON
+### BUTTON
 
 `<input type="button" value=""> `
 
@@ -682,11 +682,11 @@ Botao generico
 
 atributos:
 
-	* `value=""` => texto dentro do botao
+* `value=""` => texto dentro do botao
 
 ---
 
-* CHECKBOX
+### CHECKBOX
 
 `<input type="checkbox" name="">` 
 
@@ -694,11 +694,11 @@ Caixa de multiselecao 0 ou nenhuma ocorrencia
 
 atributos:
 
-	* `name=""` => identificar campos de formulários
+`name=""` => identificar campos de formulários
 
 ---
 
-* COLOR
+### COLOR
 
 `<input type="color" value="#ff0000">` 
 
@@ -710,7 +710,7 @@ value="" => texto dentro do input
 
 ---
 
-* DATE
+### DATE
 
 `<input type="date">` 
 
@@ -720,7 +720,7 @@ Input que permite a selecao de uma data
 
 ---
 
-* DATETIME-LOCAL
+### DATETIME-LOCAL
 
 `<input type="datetime-local">` 
 
@@ -730,7 +730,7 @@ Input que permite a selecao de uma data e horario
 
 ---
 
-* EMAIL
+### EMAIL
 
 `<input type="email">` 
 
@@ -740,7 +740,7 @@ Caixa de email
 
 ---
 
-* FILE
+### FILE
 
 `<input type="file">` 
 
@@ -748,7 +748,7 @@ Input que permite o envio de um arquivo
 
 ---
 
-* HIDDEN
+### HIDDEN
 
 `<input type="hidden">` 
 
@@ -756,7 +756,7 @@ Campo oculto na pagina
 
 ---
 
-* IMAGE
+### IMAGE
 
 `<input type="image" src="" alt="" width="" height="">`
 
@@ -772,7 +772,7 @@ heigth="" => altura da imagem
 
 ---
 
-* MOUTH
+### MOUTH
 
 `<input type="month">` 
 
@@ -782,7 +782,7 @@ Input que permite a selecao de um mes
 
 ---
 
-* NUMBER
+### NUMBER
 
 `<input type="number" min="" max="" step="">`
 
@@ -802,7 +802,7 @@ ex:
 
 ---
 
-* PASSWORD
+### PASSWORD
 
 `<input type="password">` 
 
@@ -810,7 +810,7 @@ Caixa de senha (com mascara)
 
 ---
 
-* RADIO
+### RADIO
 
 `<input type="radio" name="">` 
 
@@ -820,7 +820,7 @@ name="" identificar campos de formulários
 
 ---
 
-* RANGE
+### RANGE
 
 `<input type="range" min="" max="">` 
 
@@ -834,7 +834,7 @@ max="" => valor maximo
 
 ---
 
-* RESET
+### RESET
 
 `<input type="reset">` 
 
@@ -842,7 +842,7 @@ Limpa todos os campos preenchidos do formulario
 
 ---
 
-* SEARCH
+### SEARCH
 
 `<input type="search">` 
 
@@ -850,7 +850,7 @@ Input de texto para pesquisa
 
 ---
 
-* SUBMIT
+### SUBMIT
 
 `<input type="submit" value="">` 
 
@@ -860,7 +860,7 @@ value="" => texto dentro do botao
 
 ---
 
-* TEL
+### TEL
 
 `<input type="tel">`
 
@@ -868,7 +868,7 @@ Input para telefone
 
 ---
 
-* TEXT
+### TEXT
 
 `<input type="text">` 
 
@@ -876,7 +876,7 @@ Input para texto
 
 ---
 
-* TIME
+### TIME
 
 `<input type="time">` 
 
@@ -886,7 +886,7 @@ Input para selecionar uma hora
 
 ---
 
-* URL
+### URL
 
 `<input type="url">` 
 
@@ -894,7 +894,7 @@ Input para adicionar uma URL
 
 ---
 
-* WEEK
+### WEEK
 
 `<input type="week">` 
 
