@@ -1014,7 +1014,7 @@ Formato: semana n, de a
 
 | Atributo | Value | Uso | Descricao |
 | ---     | ---  | ---| ---|
-| `accept` |audio/*  video/*  image/* file_extension | Aceitar | Para types: file, image   |
+| `accept` |audio/* <br>  video/* <br> image/* <br> file_extension | Aceitar | Para types: file, image   |
 | `alt` | text | Texto descritivo |  Para types: image |
 | `autocomplete`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
 | `autofocus` | none | Autofocar | Para types: text, search, url, tel, email, password, number, date, month, week, time, datetime-local, color, checkbox, radio |
