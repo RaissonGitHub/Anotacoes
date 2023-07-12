@@ -12,7 +12,9 @@
 <html lang="pt-br"> 	 
 ```
 
-\# atibuto `lang=""` => linguagem da pagina
+Atributos:
+
+* `lang=""` => linguagem da pagina
 
 ---
 
@@ -21,10 +23,11 @@
 ```
 <head>  
 <meta charset="UTF-8" /> 
-<meta  />
 ``` 
 
-\# `charset="UTF-8"` => Permite caracteres especiais
+Atributos:
+
+* `charset="UTF-8"` => Permite caracteres especiais
 
 ---
 
@@ -52,23 +55,53 @@ Atributos:
 
 ---
 
-`<body>` => corpo do documento
+## Corpo do documento
 
-`<header></header>` => Inicio do Cabeçalho
+`<body></body>` 
 
-`<nav></nav>` => Barra de Navegação
+---
 
-`<main></main>` => Conteudo principal
+## Inicio do Cabeçalho
 
-`<section></section>` => Seção generica dentro de um documento
+`<header></header>`  
 
-`<article></article>` => Conteudo independente e autônomo
+---
 
-`<aside></aside>` => Conteudo relacionado
+## Barra de Navegação
 
-`<footer></footer>` => Rodape
+`<nav></nav>`  
 
-----
+---
+
+## Conteudo principal
+
+`<main></main>`  
+
+---
+
+## Seção generica dentro de um documento
+
+`<section></section>`  
+
+---
+
+## Conteudo independente e autônomo
+
+`<article></article>`  
+
+---
+
+## Conteudo relacionado
+
+`<aside></aside>`  
+
+---
+
+## Rodape
+
+`<footer></footer>`
+
+---
 
 ## COMENTARIO
 
@@ -731,6 +764,8 @@ Uso:
 
 Input que permite a selecao de uma cor
 
+Atributos:
+
 * `value=""` => texto dentro do input
 
 \# Pode ser definido uma cor no `value`
@@ -865,6 +900,8 @@ Uso:
 
 Caixa de selecao unica ocorrencia obrigatoria
 
+Atributos:
+
 * `name=""` identificar campos de formulários
 
 ---
@@ -912,6 +949,8 @@ Input de texto para pesquisa
 Uso:
 
 Botao de envio de informacoes do formulario
+
+Atributos:
 
 * `value=""` => texto dentro do botao
 
