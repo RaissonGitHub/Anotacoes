@@ -1014,10 +1014,51 @@ Formato: semana n, de a
 
 | Atributo | Value | Uso | Descricao |
 | ---     | ---  | ---| ---|
-| `value=""` | text | Valor | a  |
-|`readonly` |  none | Somente leitura | a | 
+| `accept` |audio/*  video/*  image/* file_extension | Aceitar | Para types: file, image   |
+| `alt` | text | Texto descritivo |  Para types: image |
+|`autocomplete`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
+| `autofocus` | none | Autofocar | Para types: text, search, url, tel, email, password, number, date, month, week, time, datetime-local, color, checkbox, radio |
+| `checked` | none | Marcado | Para types: checkbox, radio |
 |`disabled` | none | Desabilitado| a |  
-|`size=""`| number | Tamanho | Para types: text, search, tel, url, email, and password.|
-|`autocomplete=""`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
+| `form` | form_id | Especificar o form do input | Para todos os types |
+| `formaction` | URL | Especificar URL do que processara o arquivo | Para types: submit, image |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+|  |  |  |  |
+
+
+
+
+
+
+
+formaction
+formenctype
+formmethod
+height
+list
+max
+maxlength
+min
+minlength
+name
+pattern
+placeholder
+|`readonly` |  none | Somente leitura | a | 
+required
+|`size`| number | Tamanho | Para types: text, search, tel, url, email, and password.|
+src
+step
+| `value` | text | Valor | a  |
+width
 
 ---
