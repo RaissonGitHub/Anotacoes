@@ -925,7 +925,7 @@ Caixa de selecao unica ocorrencia obrigatoria
 
 Atributos:
 
-* `name=""` identificar campos de formulários
+* `name=""` => identificar campos de formulários
 
 ---
 
