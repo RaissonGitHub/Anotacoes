@@ -597,7 +597,7 @@ Os formatos compartiveis de áudio são MP3, WAV e OGG
 </audio>
 ```
 
-Ordem: 1° mpeg, 2° ogg, 3° wav, 4° <p>
+Ordem: 1° mpeg, 2° ogg, 3° wav, 4° `<p>`
 
 Atributos:
 
@@ -630,7 +630,7 @@ internos:
 </video>
 ```
 
-Ordem: 1° webm, 2° m4v, 3° mp4, 4° ogv, 5° <p>
+Ordem: 1° webm, 2° m4v, 3° mp4, 4° ogv, 5° `<p>`
 
 Atributos:
 
@@ -916,9 +916,9 @@ Input de controle para inserir um número cujo valor exato não é importante  (
 
 Atributos:
 
-*`min=""` => valor minimo 
+* `min=""` => valor minimo 
 
-*`max=""` => valor maximo
+* `max=""` => valor maximo
 
 ---
 
@@ -1012,14 +1012,16 @@ Formato: semana n, de a
 
 ### Atributos para inputs 
 
-value=""
+| Atributo | Value | Uso |Descricao |
 
-readonly =>  somente leitura
+|`value=""`| |  | |
 
-disabled => desabilitado
+|`readonly` |  Somente leitura| | |
 
-size=""
+|`disabled` | | Desabilitado| |  
 
--para types: text, search, tel, url, email, and password.
+ |`size=""`|  | Tamanho | Para types: text, search, tel, url, email, and password.|
+
+ |`autocomplete=""`|  |  | |
 
 ---
