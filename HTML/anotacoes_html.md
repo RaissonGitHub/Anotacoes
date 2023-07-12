@@ -682,6 +682,28 @@ Atributos:
 
 ---
 
+- [ ] select
+- [ ] optgroup
+- [ ] option
+- [ ] script
+- [ ] style
+- [ ] table
+- [ ] meta description
+- [ ] meta keywords
+- [ ] meta author
+- [ ] meta viewport
+- [ ] map
+- [ ] area shape
+- [ ] link
+- [ ] kbd
+- [ ] ins
+- [ ] iframe
+- [ ] figure
+- [ ] figcaption
+- [ ] dfn
+- [ ] datalist
+- [ ] button
+
 # A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  
 
 ## FIELDSET
