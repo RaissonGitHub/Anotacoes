@@ -1016,13 +1016,13 @@ Formato: semana n, de a
 | ---     | ---  | ---| ---|
 | `accept` |audio/* <br>  video/* <br> image/* <br> file_extension | Aceitar | Para types: file, image   |
 | `alt` | text | Texto descritivo |  Para types: image |
-| `autocomplete`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
+| `autocomplete`| on, off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
 | `autofocus` | none | Autofocar | Para types: text, search, url, tel, email, password, number, date, month, week, time, datetime-local, color, checkbox, radio |
 | `checked` | none | Marcado | Para types: checkbox, radio |
 | `disabled` | none | Desabilitado| Para todos os types |  
 | `form` | form_id | Especificar o form do input | Para todos os types |
 | `formaction` | URL | Especificar URL que processara o arquivo | Para types: submit, image |
-| `formenctype` |  |  |  |
+| `formenctype` | application/x-www-form-urlencoded <br> multipart/form-data <br> text/plain | Especificar como os dados do formulário devem ser codificados | Apenas para forms com method="post" <br> Para types: submit, image |
 | `formmethod` |  |  |  |
 | `height` |  |  |  |
 | `list` |  |  |  |
