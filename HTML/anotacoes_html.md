@@ -189,7 +189,9 @@ ex:
 
 `<blockquote cite="https://"> citacao </blockquote>`
 
-* atributo `cite=""` => fonte da citacao
+Atributos:
+
+* `cite=""` => fonte da citacao
 
 ---
 
@@ -197,7 +199,9 @@ ex:
 
 `<abbr title=" termo completo" > termo abreviado</abbr>`
 
-* atributo `title=""` => descricao completa do termo abreviado
+Atributos: 
+
+* `title=""` => descricao completa do termo abreviado
 
 ---
 
@@ -313,7 +317,7 @@ ex:
 
 `<meter min="0" max="100" low="40" high="90" optimum="100" value="70"></meter>`
 
-atributos:
+Atributos:
 
 * `min=""` => valor minimo
 
@@ -343,9 +347,11 @@ atributos:
 </ol>
 ```
 
-* atributo `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
+Atributos:
 
--Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
+* `type=""` => indicar a marcacao da lista, variando entre 1, A, a, I,  i
+
+\# Existe também a possibilidade de começar por outros números como 3 ao invés de 1 com o atributo start
 
 ---
 
@@ -357,7 +363,9 @@ atributos:
 </ul>
 ```
 
-* atributo `type=""` => indicar a marcacao da lista, variando entre disc, circle, square
+Atributos:
+
+* `type=""` => indicar a marcacao da lista, variando entre disc, circle, square
 
 ---
 
@@ -398,7 +406,7 @@ ex:
 
 `<a href="" target=""  rel="">Texto do link</a>`
 
-atributos:
+Atributos:
 
 * `href=""` => hyperlink do arquivo
 
@@ -430,7 +438,7 @@ Quando utilizar links externos, ou seja, links que te levam para fora do seu sit
 
 `<a href="" download="" type="" target="_blanck" rel="external">texto do link</a>`
 
-atributos:
+Atributos:
 
 * `href=""` => hyperlink do arquivo
 
@@ -481,7 +489,7 @@ Quando utilizar links externos, ou seja, links que te levam para fora do seu sit
 
 `<img src="" alt="" />`
 
-atributos:
+Atributos:
 
 * `src=""` => fonte da imagem
 
@@ -505,7 +513,7 @@ A tag picture permite que vc crie varios sources => várias fontes para imagens
 
 A ordem é: img, source media="(max-width: 1050px)",source media="(max-width:750px)"
 
-atributos:
+Atributos:
 
 * `src=""` => fonte da imagem
 
@@ -524,7 +532,7 @@ Pode ser interno ou externo
 ## AUDIO
 `<audio src=" controls autoplay loop></audio>`
 
-atributos:
+Atributos:
 
 * `src=""` => fonte do audio
 
@@ -554,7 +562,7 @@ Os formatos compartiveis de áudio são MP3, WAV e OGG
 
 Ordem: mpeg, ogg, wav, <p>
 
-atributos:
+Atributos:
 
 * `preload=""` => o que deve ser feito com o audio
 
@@ -587,7 +595,7 @@ internos:
 
 Ordem: webm, m4v, mp4, ogv, <p>
 
-atributos:
+Atributos:
 
 * `poster=""` => define uma capa para o video, especificar o local
 
@@ -625,7 +633,7 @@ ex:
 </form>
 ```
 
-atributos:
+Atributos:
 
 * `method=""` => especifica o metodo do formulario
 
@@ -664,7 +672,9 @@ Titulo para o agrupamento
 
 ``<label for="">Nome</label>`` => nome para o input
 
-* atributo `for=""` => especifica o input
+Atributos:
+
+* `for=""` => especifica o input
 
 \# Deve ser colocado ou id, class referente ao input
 
@@ -674,13 +684,15 @@ Titulo para o agrupamento
 
 `<input type="">`
 
+---
+
 ### BUTTON
 
 `<input type="button" value=""> `
 
 Botao generico
 
-atributos:
+Atributos:
 
 * `value=""` => texto dentro do botao
 
@@ -692,9 +704,9 @@ atributos:
 
 Caixa de multiselecao 0 ou nenhuma ocorrencia
 
-atributos:
+Atributos:
 
-`name=""` => identificar campos de formulários
+* `name=""` => identificar campos de formulários
 
 ---
 
@@ -704,9 +716,9 @@ atributos:
 
 Input que permite a selecao de uma cor
 
-value="" => texto dentro do input
+* `value=""` => texto dentro do input
 
--pode ser definido uma cor
+Pode ser definido uma cor no `value`
 
 ---
 
@@ -716,7 +728,7 @@ value="" => texto dentro do input
 
 Input que permite a selecao de uma data
 
--formato:  dd/mm/aaaa
+Formato:  dd/mm/aaaa
 
 ---
 
@@ -726,7 +738,7 @@ Input que permite a selecao de uma data
 
 Input que permite a selecao de uma data e horario
 
--formato:  dd/mm/aaaa h:min
+Formato:  dd/mm/aaaa h:min
 
 ---
 
@@ -736,7 +748,7 @@ Input que permite a selecao de uma data e horario
 
 Caixa de email
 
--por padrao pede um @ para ser verdadeiro
+Por padrao pede um @ para ser verdadeiro
 
 ---
 
@@ -760,15 +772,15 @@ Campo oculto na pagina
 
 `<input type="image" src="" alt="" width="" height="">`
 
-atributos:
+Atributos:
 
-src="" => fonte da imagem
+* `src=""` => fonte da imagem
 
-alt="" => descricao
+* `alt=""` => descricao
 
-width="" => largura da imagem
+* `width=""` => largura da imagem
 
-heigth="" => altura da imagem
+* `heigth=""` => altura da imagem
 
 ---
 
@@ -778,7 +790,7 @@ heigth="" => altura da imagem
 
 Input que permite a selecao de um mes
 
--formato: m de a
+Formato: m de a
 
 ---
 
@@ -788,15 +800,15 @@ Input que permite a selecao de um mes
 
 Input que permite a entrada somente de numeros
 
-atributos:
+Atributos:
 
-min="" => valor minimo 
+* `min=""` => valor minimo 
 
-max="" => valor maximo
+* `max=""` => valor maximo
 
-step="" => multiplo ou casa decimal
+* `step=""` => multiplo ou casa decimal
 
-ex:
+ex: de casa decimal
 
 `step=".01"` => duas casas decimais.
 
@@ -816,7 +828,7 @@ Caixa de senha (com mascara)
 
 Caixa de selecao unica ocorrencia obrigatoria
 
-name="" identificar campos de formulários
+* `name=""` identificar campos de formulários
 
 ---
 
@@ -826,11 +838,11 @@ name="" identificar campos de formulários
 
 Input de controle para inserir um número cujo valor exato não é importante  (como um controle deslizante)
 
-atributos:
+Atributos:
 
-min="" => valor minimo 
+*`min=""` => valor minimo 
 
-max="" => valor maximo
+*`max=""` => valor maximo
 
 ---
 
@@ -856,7 +868,7 @@ Input de texto para pesquisa
 
 Botao de envio de informacoes do formulario
 
-value="" => texto dentro do botao
+* `value=""` => texto dentro do botao
 
 ---
 
@@ -882,7 +894,7 @@ Input para texto
 
 Input para selecionar uma hora
 
--formato: h:min
+Formato: h:min
 
 ---
 
@@ -900,7 +912,7 @@ Input para adicionar uma URL
 
 Permite a selecao de uma semana especifica do ano
 
--formato: semana n, de a
+Formato: semana n, de a
 
 ---
 
