@@ -1015,13 +1015,9 @@ Formato: semana n, de a
 | Atributo | Value | Uso | Descricao |
 | ---     | ---  | ---| ---|
 | `value=""` | text | Valor | a  |
-
 |`readonly` |  none | Somente leitura | a | 
-
 |`disabled` | none | Desabilitado| a |  
-
- |`size=""`| number | Tamanho | Para types: text, search, tel, url, email, and password.|
-
- |`autocomplete=""`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
+|`size=""`| number | Tamanho | Para types: text, search, tel, url, email, and password.|
+|`autocomplete=""`| on,off | Autocompletar | Para types: text, search, url, tel, email, password, datepickers, range, and color. |
 
 ---
