@@ -209,6 +209,8 @@ Atributos:
 
 `<bdo dir="rtl"></bdo>`
 
+Atributos: 
+
 * `dir=""` => orientacao do texto
 
 ---
@@ -228,9 +230,7 @@ Atributos:
 ## ELEMENTO GENERICO DIV
 
 ```
-<div class="">
-         conteudo
-</div>
+<div class=""></div>
 ```
 
 ou 
@@ -238,7 +238,9 @@ ou
 ```
 <div id=""></div>
 ```
-\- Elemento generico para se colocar class ou id
+Uso:
+
+Elemento generico para se colocar class ou id
 
 ---
 
@@ -250,7 +252,9 @@ ou
 
 `<span id="">texto</span>`
 
-\- Elemento generico de texto para se colocar class ou id
+Uso:
+
+Elemento generico de texto para se colocar class ou id
 
 ---
 
@@ -329,7 +333,7 @@ Atributos:
 
 * `optimum=""` =>  valor ideal entre os valores
 
-`value=""` => valor atual
+* `value=""` => valor atual
 
 ---
 
@@ -410,7 +414,7 @@ Atributos:
 
 * `href=""` => hyperlink do arquivo
 
-Pode ser tanto externo quanto interno, ou até dentro da pagina
+	* `href=""` Pode ser tanto externo quanto interno, ou até dentro da pagina
 
 * `target=""` => destino do link
 
@@ -493,7 +497,7 @@ Atributos:
 
 * `src=""` => fonte da imagem
 
-Pode ser interno ou externo
+	* `src=""` Pode ser interno ou externo
 
 * `alt="" =` => descricao da imagem, ajuda na acessibilidade
 
@@ -511,13 +515,13 @@ Pode ser interno ou externo
 
 A tag picture permite que vc crie varios sources => várias fontes para imagens
 
-A ordem é: img, source media="(max-width: 1050px)",source media="(max-width:750px)"
+A ordem é: 1° img, 2° source media="(max-width: 1050px)", 3° source media="(max-width:750px)"
 
 Atributos:
 
 * `src=""` => fonte da imagem
 
-Pode ser interno ou externo
+	* `src=""` Pode ser interno ou externo
 
 * `alt=""` => descricao da imagem, ajuda na acessibilidade
 
@@ -560,7 +564,7 @@ Os formatos compartiveis de áudio são MP3, WAV e OGG
 </audio>
 ```
 
-Ordem: mpeg, ogg, wav, <p>
+Ordem: 1° mpeg, 2° ogg, 3° wav, 4° <p>
 
 Atributos:
 
@@ -593,7 +597,7 @@ internos:
 </video>
 ```
 
-Ordem: webm, m4v, mp4, ogv, <p>
+Ordem: 1° webm, 2° m4v, 3° mp4, 4° ogv, 5° <p>
 
 Atributos:
 
@@ -663,6 +667,7 @@ Agrupar elementos do formulario
 	<legend>Title</legend> 
 <fieldset>
 ```
+Uso:
 
 Titulo para o agrupamento
 
@@ -670,7 +675,11 @@ Titulo para o agrupamento
 
 ## LABEL
 
-``<label for="">Nome</label>`` => nome para o input
+``<label for="">Nome</label>`` 
+
+Uso:
+
+Nome para o input
 
 Atributos:
 
@@ -690,6 +699,8 @@ Atributos:
 
 `<input type="button" value=""> `
 
+Uso:
+
 Botao generico
 
 Atributos:
@@ -701,6 +712,8 @@ Atributos:
 ### CHECKBOX
 
 `<input type="checkbox" name="">` 
+
+Uso:
 
 Caixa de multiselecao 0 ou nenhuma ocorrencia
 
@@ -714,17 +727,21 @@ Atributos:
 
 `<input type="color" value="#ff0000">` 
 
+Uso:
+
 Input que permite a selecao de uma cor
 
 * `value=""` => texto dentro do input
 
-Pode ser definido uma cor no `value`
+\# Pode ser definido uma cor no `value`
 
 ---
 
 ### DATE
 
 `<input type="date">` 
+
+Uso:
 
 Input que permite a selecao de uma data
 
@@ -736,6 +753,8 @@ Formato:  dd/mm/aaaa
 
 `<input type="datetime-local">` 
 
+Uso:
+
 Input que permite a selecao de uma data e horario
 
 Formato:  dd/mm/aaaa h:min
@@ -745,6 +764,8 @@ Formato:  dd/mm/aaaa h:min
 ### EMAIL
 
 `<input type="email">` 
+
+Uso:
 
 Caixa de email
 
@@ -756,6 +777,8 @@ Por padrao pede um @ para ser verdadeiro
 
 `<input type="file">` 
 
+Uso:
+
 Input que permite o envio de um arquivo
 
 ---
@@ -764,6 +787,8 @@ Input que permite o envio de um arquivo
 
 `<input type="hidden">` 
 
+Uso:
+
 Campo oculto na pagina
 
 ---
@@ -771,6 +796,10 @@ Campo oculto na pagina
 ### IMAGE
 
 `<input type="image" src="" alt="" width="" height="">`
+
+Uso:
+
+Input que permite o uso de uma imagem como botao de envio de formulario
 
 Atributos:
 
@@ -788,6 +817,8 @@ Atributos:
 
 `<input type="month">` 
 
+Uso:
+
 Input que permite a selecao de um mes
 
 Formato: m de a
@@ -797,6 +828,8 @@ Formato: m de a
 ### NUMBER
 
 `<input type="number" min="" max="" step="">`
+
+Uso:
 
 Input que permite a entrada somente de numeros
 
@@ -818,6 +851,8 @@ ex: de casa decimal
 
 `<input type="password">` 
 
+Uso:
+
 Caixa de senha (com mascara)
 
 ---
@@ -825,6 +860,8 @@ Caixa de senha (com mascara)
 ### RADIO
 
 `<input type="radio" name="">` 
+
+Uso:
 
 Caixa de selecao unica ocorrencia obrigatoria
 
@@ -835,6 +872,8 @@ Caixa de selecao unica ocorrencia obrigatoria
 ### RANGE
 
 `<input type="range" min="" max="">` 
+
+Uso:
 
 Input de controle para inserir um número cujo valor exato não é importante  (como um controle deslizante)
 
@@ -850,6 +889,8 @@ Atributos:
 
 `<input type="reset">` 
 
+Uso:
+
 Limpa todos os campos preenchidos do formulario
 
 ---
@@ -858,6 +899,8 @@ Limpa todos os campos preenchidos do formulario
 
 `<input type="search">` 
 
+Uso:
+
 Input de texto para pesquisa
 
 ---
@@ -865,6 +908,8 @@ Input de texto para pesquisa
 ### SUBMIT
 
 `<input type="submit" value="">` 
+
+Uso:
 
 Botao de envio de informacoes do formulario
 
@@ -876,6 +921,8 @@ Botao de envio de informacoes do formulario
 
 `<input type="tel">`
 
+Uso:
+
 Input para telefone
 
 ---
@@ -884,6 +931,8 @@ Input para telefone
 
 `<input type="text">` 
 
+Uso:
+
 Input para texto
 
 ---
@@ -891,6 +940,8 @@ Input para texto
 ### TIME
 
 `<input type="time">` 
+
+Uso:
 
 Input para selecionar uma hora
 
@@ -902,6 +953,8 @@ Formato: h:min
 
 `<input type="url">` 
 
+Uso:
+
 Input para adicionar uma URL
 
 ---
@@ -909,6 +962,8 @@ Input para adicionar uma URL
 ### WEEK
 
 `<input type="week">` 
+
+Uso:
 
 Permite a selecao de uma semana especifica do ano
 
