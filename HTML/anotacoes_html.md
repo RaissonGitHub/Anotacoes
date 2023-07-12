@@ -871,7 +871,7 @@ Atributos:
 
 ---
 
-### MOUTH
+### MONTH
 
 `<input type="month">` 
 
