@@ -2,8 +2,8 @@
 Anotações de programação em geral e outros.
 * Banco de dados
 * Sintaxe do GitHub
+* HTML
 - [ ] Comandos terminal git
-- [ ] HTML
 - [ ] CSS
 - [ ] JavaScript
 - [ ] Node.js
