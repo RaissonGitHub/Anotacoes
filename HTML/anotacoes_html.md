@@ -566,6 +566,17 @@ Atributos:
 
 ---
 
+## FIGURE
+
+```
+<figure>
+  <img src="/kookaburra.jpg" alt="Kooaburra">
+  <img src="/pelican.jpg" alt="Pelicano na praia">
+  <img src="/lorikeet.jpg" alt="Papagaio">
+  <figcaption>Pássaros Australianos. Da esquerda para direita, Kookburra, Pelicano e Papagaio. Originais por <a href="http://www.flickr.com/photos/rclark/">Richard Clark</a></figcaption>
+</figure>
+```
+
 ## AUDIO
 `<audio src=" controls autoplay loop></audio>`
 
@@ -661,6 +672,35 @@ ex:
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j5RGWhxiI_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ```
+## BUTTON
+
+```
+ <button type="button">Click Me!</button> 
+```
+
+Atributos:
+
+* `type=""` => especifica o tipo
+
+- [ ] script
+- [ ] style
+- [ ] table
+- [ ] meta description
+- [ ] meta keywords
+- [ ] meta author
+- [ ] meta viewport
+- [ ] map
+- [ ] area shape
+- [ ] link
+- [ ] kbd
+- [ ] ins
+- [ ] iframe
+- [ ] figure
+- [ ] figcaption
+- [ ] dfn
+- [ ] datalist
+- [ ] textarea
+
 ---
 
 ## FORMULARIO
@@ -682,28 +722,6 @@ Atributos:
 
 ---
 
-- [ ] select
-- [ ] optgroup
-- [ ] option
-- [ ] script
-- [ ] style
-- [ ] table
-- [ ] meta description
-- [ ] meta keywords
-- [ ] meta author
-- [ ] meta viewport
-- [ ] map
-- [ ] area shape
-- [ ] link
-- [ ] kbd
-- [ ] ins
-- [ ] iframe
-- [ ] figure
-- [ ] figcaption
-- [ ] dfn
-- [ ] datalist
-- [ ] button
-- [ ] textarea
 
 # A PARTIR DAQUI TUDO DEVE ESTAR DENTRO DA TAG `<form>`  
 
@@ -742,6 +760,33 @@ Atributos:
 * `for=""` => especifica o input
 
 \# Deve ser colocado ou id, class referente ao input
+
+---
+
+## CAIXA DE SELECAO
+
+```
+<label for="options"></label>
+<select name="options">
+	<optgroup label="Grupo 1">
+		<option value="op1">Opcao 1</option>
+		<option value="op2">Opcao 2</option>
+	<optgroup label="Grupo 2">
+		<option value="op1">Opcao 1</option>
+		<option value="op2">Opcao 2</option>
+</select>
+```
+* `<optgroup>` => grupo de opcoes
+
+* `<option>` => opcao da lista
+
+Atributos:
+
+* `name=""` => identificar o campo
+
+* `label=""` => descricao do campo
+
+* `value=""` => valor da opcao
 
 ---
 
@@ -1037,12 +1082,12 @@ Formato: semana n, de a
 
 | Atributo       | Value                                                                      | Uso                                                           | Descricao                                                                                                                                          |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
-| `accept`       | audio/* <br>  video/* <br> image/* <br> file_extension                     | Definir os tipos de arquivos aceitos                                                       | Para types: file, image                                                                                                                            |
-| `alt`          | text                                                                       | Fornecer um texto descritivo de imagem                                             | Para types: image                                                                                                                                  |
-| `autocomplete` | on, off                                                                    | Autocompletar input                                                 | Para types: text, search, url, tel, email, password, datepickers, range, and color                                                                 |
-| `autofocus`    | none                                                                       | Autofocar no input                                                    | Para types: text, search, url, tel, email, password, number, date, month, week, time, datetime-local, color, checkbox, radio                       |
-| `checked`      | none                                                                       | Definir um input como marcado                                                       | Para types: checkbox, radio                                                                                                                        |
-| `disabled`     | none                                                                       | Desabilitar input                                                  | Para todos os types                                                                                                                                |
+| `accept`       | audio/* <br>  video/* <br> image/* <br> file_extension                     | Definir os tipos de arquivos aceitos                          | Para types: file, image                                                                                                                            |
+| `alt`          | text                                                                       | Fornecer um texto descritivo de imagem                        | Para types: image                                                                                                                                  |
+| `autocomplete` | on, off                                                                    | Autocompletar input                                           | Para types: text, search, url, tel, email, password, datepickers, range, and color                                                                 |
+| `autofocus`    | none                                                                       | Autofocar no input                                            | Para types: text, search, url, tel, email, password, number, date, month, week, time, datetime-local, color, checkbox, radio                       |
+| `checked`      | none                                                                       | Definir um input como marcado                                 | Para types: checkbox, radio                                                                                                                        |
+| `disabled`     | none                                                                       | Desabilitar input                                             | Para todos os types                                                                                                                                |
 | `form`         | form_id                                                                    | Especificar o form do input                                   | Para todos os types                                                                                                                                |
 | `formaction`   | URL                                                                        | Especificar URL que processara o arquivo                      | Para types: submit, image                                                                                                                          |
 | `formenctype`  | application/x-www-form-urlencoded <br> multipart/form-data <br> text/plain | Especificar como os dados do formulário devem ser codificados | Apenas para forms com method="post" <br> Para types: submit, image                                                                                 |
@@ -1056,12 +1101,35 @@ Formato: semana n, de a
 | `name`         | text                                                                       | Definir uma referencia ao input                               | Para todos os types                                                                                                                                |
 | `pattern`      | regexp                                                                     | Validar input usando regexp                                   | Para types: text, date, search, url, tel, email, and password                                                                                      |
 | `placeholder`  | text                                                                       | Descrever o uso do input dentro do elemento                   | Para types: text, date, search, url, tel, email, and password                                                                                      |
-| `readonly`     | none                                                                       | Definir input como somente leitura                                               | Para types: text, password, number, email, tel, date, time, datetime-local, month, week, color                                                     |
+| `readonly`     | none                                                                       | Definir input como somente leitura                            | Para types: text, password, number, email, tel, date, time, datetime-local, month, week, color                                                     |
 | `required`     | none                                                                       | Tornar o campo com preenchimento obrigatorio                  | Para types: text, search, url, tel, email, password, date pickers, number, checkbox, radio, and file.                                              |
 | `size`         | number                                                                     | Especificar a largura visível, em caracteres                  | Para types: text, search, tel, url, email, and password.                                                                                           |
 | `src`          | URL                                                                        | Especificar a URL da imagem                                   | Para types: image                                                                                                                                  |
 | `step`         | number, any                                                                | Especificar o intervalo entre números legais no input         | Para types: number, range, date, datetime-local, month, time and week                                                                              |
-| `value`        | text                                                                       | Definir um valor contido no input                                        | Para types: checkbox, color, date, datetime-local, email, hidden, month, number, password, radio, range, reset, search, tel, text, time, url, week |
+| `value`        | text                                                                       | Definir um valor contido no input                             | Para types: checkbox, color, date, datetime-local, email, hidden, month, number, password, radio, range, reset, search, tel, text, time, url, week |
 | `width`        | pixels                                                                     | Definir a largura de uma imagem                               | Para types: image                                                                                                                                  |
 
 ---
+
+## LISTA DE DADOS
+
+```
+<input list="browsers" name="browser" id="browser">
+<datalist id="browsers">
+  <option value="Edge">
+  <option value="Firefox">
+  <option value="Chrome">
+  <option value="Opera">
+  <option value="Safari">
+</datalist>
+```
+
+Atributos:
+
+* `list=""` => especificar a lista referente
+
+* `name=""` => definir uma referencia 
+
+* `id=""` => definir uma referencia 
+
+* `value=""` => valor da opcao
