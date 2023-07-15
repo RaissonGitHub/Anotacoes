@@ -605,6 +605,7 @@ Atributos:
 	<img src="" alt="imagem flexivel" />
 </picture>
 ```
+Uso:
 
 A tag picture permite que vc crie varios sources => várias fontes para imagens
 
@@ -1021,6 +1022,8 @@ Atributos:
 * `rows=""` => especifica o numero de linhas
 
 * `cols=""` => especifica a largura do campo
+
+---
 
 ## INPUTS
 
