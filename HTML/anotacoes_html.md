@@ -20,14 +20,37 @@ Atributos:
 
 ## Cabecario
 
-```
-<head>  
-<meta charset="UTF-8" /> 
-``` 
+`<head></head>` 
+
+---
+
+## META
+
+* `<meta charset="UTF-8">`
+
+  * Permite caracteres especiais
+
+* `<meta name="description" content="">`
+
+  * Especifica uma descricao do site 
+
+* `<meta name="keywords" content="">`
+
+  * Especifica palavras-chave do site
+
+* `<meta name="author" content="John Doe">`
+
+  * Especifica o autor do site
+  
+* `<meta name="viewport" content="width=device-width, initial-scale=1.0">`
+
+  * Controla como o conteúdo é dimensionado e exibido em dispositivos móveis
 
 Atributos:
 
-* `charset="UTF-8"` => Permite caracteres especiais
+* `name=""` => nome do metadata
+
+* `content=""` => conteudo associado ao atributo `name`
 
 ---
 
@@ -47,15 +70,21 @@ Atributos:
 
 ---
 
+## ESTILO INTERNO
+
+`<style></style>`
+
+---
+
 ## ESTILO EXTERNO
 
 ```
-<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="styles.css" >
 ```
+
 * `rel=""` => relacionamento do link
 
 * `href=""` => hyperlink
-
 
 ---
 
@@ -794,14 +823,27 @@ Atributos:
 
 * `type=""` => especifica o tipo
 
-- [ ] script
-- [ ] style
+---
+
+## SCRIPT INTERNO
+
+`<script><script>`
+
+---
+
+## SCRIPT EXTERNO
+
+`<script src=""></script>`
+
+Atributos:
+
+* `src=""` => fonte do script
+
 - [ ] table
 - [ ] meta description
 - [ ] meta keywords
 - [ ] meta author
 - [ ] meta viewport
-- [ ] link
 
 ---
 
@@ -1196,7 +1238,7 @@ Formato: semana n, de a
 
 ---
 
-### Atributos para inputs 
+## Atributos para inputs 
 
 | Atributo       | Value                                                                      | Uso                                                           | Descricao                                                                                                                                          |
 | -------------- | -------------------------------------------------------------------------- | ------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
