@@ -813,18 +813,6 @@ Atributos:
 
 ---
 
-## BUTTON
-
-```
- <button type="button">Click Me!</button> 
-```
-
-Atributos:
-
-* `type=""` => especifica o tipo
-
----
-
 ## SCRIPT INTERNO
 
 `<script><script>`
@@ -839,11 +827,95 @@ Atributos:
 
 * `src=""` => fonte do script
 
-- [ ] table
-- [ ] meta description
-- [ ] meta keywords
-- [ ] meta author
-- [ ] meta viewport
+---
+
+## TABELAS
+
+```
+ <table>
+    <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th colspan="2">Phone</th>
+  </tr>
+  <tr>
+    <td>John Doe</td>
+    <td>john.doe@example.com</td>
+    <td>123-45-678</td>
+    <td>212-00-546</td>
+  </tr>
+</table> 
+
+```
+* `<table>` => define uma tabela
+
+* `<tr>` => define uma linha na tabela
+
+* `<th>` => define um cabecario de tabela
+
+* `<td>` => define uma celula da tabela
+
+Atributos:
+
+* `colspan=""` => define quantas colunas ocupara
+
+## TABELA SEMANTICA 
+
+```
+ <table>
+  <caption>Arrecadacoes do ano</caption>
+  <thead>
+    <tr>
+      <th>Ano</th>
+      <th>Arrecadacoes</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Janeiro</td>
+      <td>$100</td>
+    </tr>
+    <tr>
+      <td>Fevereiro</td>
+      <td>$80</td>
+    </tr>
+  </tbody>
+  <tfoot>
+    <tr>
+      <td>Soma</td>
+      <td>$180</td>
+    </tr>
+  </tfoot>
+</table> 
+```
+
+* `<table>` => define uma tabela
+
+* `<caption>` => define um titulo para a tabela
+
+* `<thead>` => agrupa o conteudo do cabecario da tabela
+
+* `<tbody>` => agrupa o conteudo do corpo da tabela
+
+* `<tfoot>` => agrupa o conteudo do rodape da tabela
+
+* `<tr>` => define uma linha na tabela
+
+* `<th>` => define um cabecario de tabela
+
+* `<td>` => define uma celula da tabela
+
+---
+
+## BUTTON
+
+```
+ <button type="button">Texto do botao</button> 
+```
+
+Atributos:
+
+* `type=""` => especifica o tipo
 
 ---
 
