@@ -47,6 +47,18 @@ Atributos:
 
 ---
 
+## ESTILO EXTERNO
+
+```
+<link rel="stylesheet" href="styles.css">
+```
+* `rel=""` => relacionamento do link
+
+* `href=""` => hyperlink
+
+
+---
+
 ## TITULO DA PAGINA
 
 ```
@@ -747,6 +759,31 @@ ex:
 ```
 <iframe width="560" height="315" src="https://www.youtube.com/embed/j5RGWhxiI_M" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 ```
+
+---
+
+## IFRAME
+
+```
+ <iframe src="" title="" width="" height=""></iframe> 
+```
+
+Uso:
+
+Incomporar outros sites ou elementos de sites na pagina
+
+Atributos:
+
+* `src=""` => fonte do iframe
+
+* `title=""` => define um titulo para o iframe
+
+* `width=""` => define a largura do iframe
+
+* `height=""` => define a largura do iframe
+
+---
+
 ## BUTTON
 
 ```
@@ -765,7 +802,6 @@ Atributos:
 - [ ] meta author
 - [ ] meta viewport
 - [ ] link
-- [ ] iframe
 
 ---
 
