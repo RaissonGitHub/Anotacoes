@@ -212,6 +212,14 @@ ex:
 
 ---
 
+## SIMULAR ENTRADA DE TECLADO
+
+```
+ <kbd>Ctrl</kbd> + <kbd>C</kbd>
+```
+
+---
+
 ## CITACAO
 
 `<q></q>`
@@ -230,13 +238,24 @@ Atributos:
 
 ## ABREVIACAO
 
-`<abbr title=" termo completo" > termo abreviado</abbr>`
+`<abbr title="termo completo" > termo abreviado</abbr>`
 
 Atributos: 
 
 * `title=""` => descricao completa do termo abreviado
 
 ---
+
+## DEFINICAO
+
+```
+ <dfn title="Definicao">Termo</dfn>  
+```
+
+Atributos: 
+
+* `title=""` => descricao completa do termo 
+
 
 ## TEXTO INVERTIDO
 
@@ -570,12 +589,68 @@ Atributos:
 
 ```
 <figure>
-  <img src="/kookaburra.jpg" alt="Kooaburra">
-  <img src="/pelican.jpg" alt="Pelicano na praia">
-  <img src="/lorikeet.jpg" alt="Papagaio">
-  <figcaption>Pássaros Australianos. Da esquerda para direita, Kookburra, Pelicano e Papagaio. Originais por <a href="http://www.flickr.com/photos/rclark/">Richard Clark</a></figcaption>
+  <img src="" alt="">
+  <img src="" alt="">
+  <img src="" alt="">
+  <figcaption> Imagens.</figcaption>
 </figure>
 ```
+
+Uso:
+
+Marcar diagramas, ilustrações, fotos, e fragmentos de código
+
+* `<figcaption>` => Legenda das imagens
+
+Atributos:
+
+* `src=""` => fonte da imagem
+
+	* `src=""` Pode ser interno ou externo
+
+* `alt=""` => descricao da imagem, ajuda na acessibilidade
+
+---
+
+## IMAGEM COM ELEMENTOS CLICAVEIS
+
+```
+<img src="" alt="" usemap="#workmap" width="400" height="400">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="" href="">
+  <area shape="rect" coords="290,172,333,250" alt="" href="">
+  <area shape="circle" coords="337,300,44" alt="" href="">
+</map> 
+```
+
+* `<map>` => usado para criar um mapa de imagem interativo
+
+* `<area>` => define uma area clicavel dentro da imagem 
+
+Atributos:
+
+* `src=""` => fonte da imagem
+
+	* `src=""` Pode ser interno ou externo
+
+* `alt=""` => descricao da imagem, ajuda na acessibilidade
+
+* `usemap=""` => especifica o mapa de imagem
+
+* `width=""` => especifica a largura da imagem
+
+* `height=""` => especifica a altura da imagem
+
+* `name=""` => referencia do mapa de imagem
+
+* `shape=""` => especifica o formato da area
+
+* `coords` => especifica as coordenadas da area
+
+* `href=""` => especifica um hyperlink para a area
+
+---
 
 ## AUDIO
 `<audio src=" controls autoplay loop></audio>`
@@ -689,17 +764,8 @@ Atributos:
 - [ ] meta keywords
 - [ ] meta author
 - [ ] meta viewport
-- [ ] map
-- [ ] area shape
 - [ ] link
-- [ ] kbd
-- [ ] ins
 - [ ] iframe
-- [ ] figure
-- [ ] figcaption
-- [ ] dfn
-- [ ] datalist
-- [ ] textarea
 
 ---
 
@@ -789,6 +855,22 @@ Atributos:
 * `value=""` => valor da opcao
 
 ---
+
+## TEXTAREA
+
+```
+ <textarea rows="" cols="">
+```
+
+Uso:
+
+Campo de multiplas linhas de texto
+
+Atributos:
+
+* `rows=""` => especifica o numero de linhas
+
+* `cols=""` => especifica a largura do campo
 
 ## INPUTS
 
