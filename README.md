@@ -1,7 +1,7 @@
 # Anotacoes
 Anotações de programação em geral e outros.
 * Banco de dados
-* Sintaxe do GitHub
+* Sintaxe markdown
 * HTML
 - [ ] Comandos terminal git
 - [ ] CSS
