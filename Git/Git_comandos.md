@@ -184,7 +184,7 @@ ex:
 
 ## Reverter um commit
 
-( `git revert nome_do_commit`
+* `git revert nome_do_commit`
 
 ## Ajuda do git
 
