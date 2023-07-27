@@ -13,7 +13,11 @@ const server = http.createServer((req,res) =>{
     console.log('Servidor rodando na porta 3000')
 })
 
-//Headers são metadados transmitidos em requisições e respostas HTTP contendo informações cruciais, como o tipo de conteúdo, autenticação, cache e muito mais, permitindo a comunicação eficiente entre clientes e servidores na web.
+/*
+Headers são metadados transmitidos em requisições e respostas HTTP contendo informações cruciais,
+como o tipo de conteúdo, autenticação, cache e muito mais, permitindo a comunicação eficiente
+entre clientes e servidores na web.
+*/
 
 /*
 Alguns exemplos de cabeçalhos comuns são:
