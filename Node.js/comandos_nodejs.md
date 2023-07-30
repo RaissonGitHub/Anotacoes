@@ -49,3 +49,6 @@ O metodo `listen()` recebe dois parametros: a porta que ficara sendo ouvida e um
 \# A porta escolhida foi a 3000, mas é possivel colocar outras portas também
 
 \# Para verificar o servidor criado, no navegador, coloque a URL http://localhost:3000
+
+__dirname => representa o diretorio atual
+__filename => representa o arquivo atual
