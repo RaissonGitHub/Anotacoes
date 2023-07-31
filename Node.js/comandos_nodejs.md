@@ -34,6 +34,8 @@ response: Representa a resposta que o servidor enviará de volta ao cliente.
 
 `response.end('Teste')` envia o texto "Teste" quando a página é carregada.
 
+`response.end()` se estiver vazio, apenas termina o programa
+
 ```
 server.listen(3000,function(){
     console.log('Servidor rodando na porta 3000')
