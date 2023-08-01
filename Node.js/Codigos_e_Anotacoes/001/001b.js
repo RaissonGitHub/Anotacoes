@@ -9,7 +9,12 @@ const server = http.createServer((req, res) => {
     switch (req.url) {
         case '/':
             html = 'index.html'
-            res.statusCode = 200 // indicando o status code da resposta (200 => certo, 404 => nao encontrado)
+            res.statusCode = 200 // indicando o status code da resposta (200 => certo, 301 => redirecionado, 404 => nao encontrado)
+            break;
+        case '/home': //caso coleque /home na url
+            res.setHeader('Location', '/') //sera redicionado para /
+            res.statusCode = 301 // indicando o status code da resposta 
+            res.end() //encerrando a resposta   
             break;
         case '/exemplo':
             html = 'exemplo.html'
