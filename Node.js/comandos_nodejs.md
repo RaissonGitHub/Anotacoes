@@ -55,3 +55,18 @@ O metodo `listen()` recebe dois parametros: a porta que ficara sendo ouvida e um
 __dirname => representa o diretorio atual
 
 __filename => representa o arquivo atual
+
+## Status codes HTTP
+
+* 200 => Ocorreu tudo normalmente
+* 301 => Recurso disponivel, mas em lugar diferente
+* 404 => Recurso nao encontrado no servidor
+* 500 => Erro no servidor
+
+## Respostas com enviadas 
+
+* 100 => Respostas informativas
+* 200 => Codigos de status de sucesso
+* 301 => Redirecionamentos
+* 404 => Erros de clientes ou utilizador (recursos nao encontrados)
+* 500 => Erro internos do servidor
