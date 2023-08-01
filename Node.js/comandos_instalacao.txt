@@ -9,10 +9,13 @@ npm init
 
 
 INSTALAR O NPM
-sudo apt install npn
-
+sudo apt install npm
 
 INSTALAR EXPRESS
+
+npm install express
+
+INSTALAR EXPRESS ?
 npm i --s express express-handlebars mongoose body-parser
 
 INICIAR NODEMON
