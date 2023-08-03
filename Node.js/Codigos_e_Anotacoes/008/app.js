@@ -3,6 +3,9 @@
 const express = require('express');
 const app = express();
 
+//Garante que arquivos estaticos dentro da pasta views como css sejam carregados junto
+app.use(express.static(__dirname+'/views'));
+
 app.listen(3000, () => {
     console.log('Servidor rodando na porta 3000!')
 })
