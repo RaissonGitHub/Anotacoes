@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Página dinamica</h1>
+    <%# comentario com ejs%>
+    <%# use a linha abaixo para inserir o valor de uma expressao javascript %>
+    <p>Aqui sua mensagem: <%= mensagem %></p>
+    
+    <%# use a linha abaixo para inserir um codigo javascript %>
+
+    <% if(true) {%>
+
+        <%console.log('True')%>
+    
+    <%}%>
+
+    <%# use a linha abaixo para inserir um codigo javascript com elemento html %>
+
+
+    <% if(true) {%> 
+        <p>Show né?</p>
+    <%}%>
+
+    <%# Observe: comentarios possuem #, expressoes =, e codigos nao possuem nada%>
+
+</body>
+</html>
