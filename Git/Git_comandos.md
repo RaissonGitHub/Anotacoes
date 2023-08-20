@@ -38,7 +38,7 @@
 
 * `git init`
 
-* `git init .` => para reforçar que seja o diretorio atual
+* `git init .` => para reforcar que seja o diretorio atual
 
 ## Verificar o estado do git
 
@@ -74,9 +74,9 @@
 
 ## Fazer conexao com o github
 
-* `git remote add origin git https://<seu_token>@github.com/<seu_usuário>/<seu_repositório>.git`
+* `git remote add origin git https://<seu_token>@github.com/<seu_usuario>/<seu_repositorio>.git`
 
-* `git remote set-url origin https://<seu_token>@github.com/<seu_usuário>/<seu_repositório>.git`
+* `git remote set-url origin https://<seu_token>@github.com/<seu_usuario>/<seu_repositorio>.git`
 
 ## Verificar conexao atual 
 
@@ -106,11 +106,11 @@
 
 * `git show` => lista as alteracoes do ultimo commit
 
-/# Em vermelho está o que foi removido
+/# Em vermelho esta o que foi removido
 
-/# Em verde está o que foi adicionado
+/# Em verde esta o que foi adicionado
 
-/# Em azul está uma descricao
+/# Em azul esta uma descricao
 
 ex:
 
@@ -164,19 +164,33 @@ ex:
 
 * `git checkout -b nome_da_ramificacao`
 
+## Criar uma ramificacao local baseada na ramificacao remota 
+
+* `git checkout -b nome_da_ramificacao origin/nome_da_ramificacao_remota`
+
 ## Listar ramificacoes 
 
 * `git branch`
 
 * `git branch -r` => para ramificaoes remotas
 
-## Mudar de mamificacao
+## Mudar de ramificacao
 
 * `git checkout nome_da_ramificacao`
 
 ## Incorporar ramificacoes
 
 * `git merge nome_da_ramificacao`
+
+## Excluir ramificacoes
+
+* `git branch -d nome_da_ramificacao` => exclui apenas se foi mesclada (merge)
+
+* `git branch -D nome_da_ramificacao` => exclusao forcada (ignora alteracoes nao mescladas)
+
+## Excluir ramificacoes remotas
+
+* `git push origin --delete nome_da_ramificacao`
 
 ## Restaurar arquivo excluido
 
