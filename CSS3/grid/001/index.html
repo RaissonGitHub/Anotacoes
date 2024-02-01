@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            font-weight: bold;
+            height: 100vh;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template-rows: 15% auto 15%;
+            grid-template-columns: 20% auto;
+            grid-template-areas: 
+            ' h h  '
+            'n c '
+            'f f ';
+            gap: 5px;
+        }
+        header{
+            background-color: black;
+            grid-area: h;
+            display: grid;
+            align-items: center;
+            justify-content: flex-start;
+            padding: 25px;
+        }
+        nav{
+            background-color: grey;
+            grid-area: n;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        .content{
+            background-color: #dddddd;
+            grid-area: c;
+            color: black;
+            display: grid;
+            align-items: center;
+            justify-content: center;
+        }
+        footer{
+            padding: 25px;
+            background-color: black;
+            grid-area: f;
+            display: grid;
+            align-items: center;
+            justify-content: flex-start;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <nav>
+            <h1>Nav</h1>
+        </nav>
+        <div class="content">
+            <h1>Content</h1>
+        </div>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+</html>

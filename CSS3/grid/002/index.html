@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-weight: bold;
+            height: 100vh;
+            font-size: 22px;
+            color: white;
+        }
+        .container{
+            height: 100vh;
+            display: grid;
+            grid-template: 15% auto 15%  / 20% auto ;
+            grid-template-areas: 
+            "h h"
+            " as ar"
+            "f f"
+            ;
+            gap: 10px;
+        }
+        header{
+            grid-area: h;
+            background: #03203d;
+            display: grid;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+       
+        aside{
+            grid-area: as;
+            background-color: #424250;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+        article{
+            background-color: #d5d5de;
+            grid-area: ar;
+            color: black; 
+            display: grid;
+            display: grid;
+            justify-content: center;
+            align-items: center;
+            padding: 10px;
+        }
+        article > h1{
+            text-align: center;
+        }
+        .images{
+            display: grid;
+            grid-template: 1fr / 1fr 2fr 1fr;
+            gap: 10px;
+            align-self: end;
+        }
+        .image{
+            background-color: #424250;
+            text-align: center;
+            padding: 50px;
+        }
+        footer{
+            background: #03203d;
+            grid-area: f;
+            display: grid;
+            justify-content: flex-start;
+            align-items: center;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Header</h1>
+        </header>
+        <aside>
+            <h1>Aside</h1>
+        </aside>
+        <article>
+            <h1>Article</h1>
+            <div class="images">
+                <div class="image"><h1>Image</h1></div>
+                <div class="image"><h1>Image</h1></div>
+                <div class="image"><h1>Image</h1></div>
+            </div>
+        </article>
+        <footer>
+            <h1>Footer</h1>
+        </footer>
+    </div>
+</body>
+</html>
