@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+    
+    <!-- Para comecar a formatacao adicione a class table -->
+    <!-- É possivel adicionar cor a tabela [table-cor] -->
+    <!-- É possivel deixar a tabela com cores alternadas [table-striped] -->
+    <table class="table table-info table-striped">
+        <thead>
+            <!-- Cabecario dark coloca automaticamente o texto em branco -->
+            <tr class="table-dark">
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- É possivel adicionar cor a uma row -->
+            <tr class="table-primary">
+                <td>Azul</td>
+                <td>Azul</td>
+                <td>Azul</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <!-- Adicionar cor a uma celula -->
+                <td class="table-danger">Vermelho</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+        </tfoot>
+    </table>   
+
+    <h2>Tabela 2</h2>
+    <!-- Efeito de hover com o mouse [table-hover] -->
+    <!--É possivel ter striped com colunas [table-striped-columns] -->
+    <!-- Para remover uma borda [table-borderless] -->
+    <!-- Para colocar uma borda [table-bordered] -->
+    <!-- Definir a cor da borda [border-cor] -->
+    <!-- Colocar as linhas de forma mais baixa [table-sm] -->
+    <table class="table table-striped-columns table-hover table-bordered border-primary table-sm">
+        <thead>
+            <tr>
+                <th>Coluna 1</th>
+                <th>Coluna 2</th>
+                <th>Coluna 3</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+            <tr>
+                <td>Celula</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <!-- Definir uma celula selecionada por padrao -->
+                <td class="table-active">Ativa</td>
+                <td>Celula</td>
+                <td>Celula</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
