@@ -1,0 +1,45 @@
+Comandos vim
+
+
+esc - ir para normal mode
+i - para inserir texto
+a - para adicionar texto depois do cursor
+A - para adicionar texto ao final da linha
+v - modo de visualizacao
+h - ir para esquerda <-
+j - ir para baixo v
+k - ir para cima ^
+l - ir para a direita ->
+x - deletar caracter sobre o cursor
+$ - ir para o fim da linha
+0 - ir para o comeco da linha
+^- - ir para a primeira palavara desconsiderando espacos
+gg - ir para o comeco do arquivo
+^G - ir para o fim do arquivo
+u - desfazer 
+^U - desfazer tudo na linha
+e - ir para o fim da proxima palavra
+CTRL r - refaz o ultimo comando u (dezfazer)
+CTRL o - ir para posicao anterior
+CTRL i - ir para posicao mais recente
+/ - pesquisar um termo
+n - para buscar a palavra pesquisada
+N - para buscar a palavra pesquisada no sentido contrario
+% - ir para proximo () ou [] ou {}
+o - para abrir uma linha abaixo do cursor
+O - para abrir uma linha acima do cursor
+ce - substituir ate o fim de uma palavra
+dd - deletar linha
+dw - deletar palavra
+d$ - deletar do cursor ate o fim da linha
+r - substituir
+w - ir para palavra seguinte
+b - voltar uma palavra
+y - copiar
+p - colar
+
+fuction adsl;fkjsad;lfj
+    a;ldksfj;lakfj
+            a;lskdfjals;fkje adls;kfjal;ewkjflaewij 
+            dl;fkjsa;lfkjd;lkfja;sldkfj;asldfkj
+            d;lasfkj;daslkfj;lsdk ;ldsakfjas;dlfkjs;aldf ;asdlkfj ;sadlfkjs;adlfkj;sadlfkj;asdlf sf;d sdlfak j;sdflk fds;aljsdf;ljdfsa;lj fsj;dl a
